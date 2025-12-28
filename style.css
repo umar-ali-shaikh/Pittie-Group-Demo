@@ -1,0 +1,1054 @@
+:root {
+    --bg1-color: #1A4174;
+
+    --bg2-color: #000000;
+    /* Dark Blue (main text / nav) */
+    --bg3-color: #ffffff;
+    /* Section background */
+    --button-color: #e9292f;
+    /* Bright Red (highlights / buttons) */
+    --text-color: #111928;
+    /* Primary text for sections */
+    --sub-text: #111928;
+
+    --gold-color: #dda83d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Inter, sans-serif;
+}
+
+/* FULL SCREEN SECTIONS */
+.smooth-section {
+    height: 100vh;
+}
+
+/* CONTENT SECTION */
+.content-section {
+    height: auto;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+}
+
+/* ================= Header ================= */
+.main-header {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo img {
+    height: 55px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 50px;
+}
+
+.main-nav a {
+    color: #ffffffb3;
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
+}
+
+.main-nav .active::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #f5c542;
+}
+
+.header-icons {
+    display: flex;
+    gap: 14px;
+}
+
+/* Default Light Mode */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #0f1115;
+    color: #ffffff;
+}
+
+/* Optional: header tweak in dark mode */
+body.dark-mode .main-header {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Cursor */
+.mode {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/* ===========Arrow  ========== */
+
+.arrowSection {
+    position: absolute;
+    bottom: 10rem;
+    right: 1.8rem;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.arrowSection>.arrowContainer {
+    position: relative;
+    right: 0;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    transition: opacity .3s;
+}
+
+
+/* ================= Hero Slider ================= */
+.hero-slider {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Swiper container */
+.heroSwiper {
+    height: 100%;
+    width: 100%;
+}
+
+/* Swiper slide (mapped from .slide) */
+.swiper-slide {
+    position: relative;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+/* ================= Text LEFT like Tata ================= */
+.hero-content-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    left: 120px;
+    transform: translateY(-40%);
+    top: 50%;
+    max-width: 520px;
+    z-index: 2;
+    opacity: 0;
+    transition:
+        transform 0.7s ease-out,
+        opacity 0.5s ease-out;
+    transition-delay: 1s;
+}
+
+.swiper-slide-active .hero-content {
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 6px 12px;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 14px;
+}
+
+.hero-content span {
+    color: #ffffffcc;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: #ffffffcc;
+}
+
+.hero-content p {
+    font-size: 15px;
+    color: #ffffffcc;
+    margin-bottom: 24px;
+}
+
+.btn {
+    background: #f5c542;
+    padding: 10px 22px;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ================= Pagination ================= */
+.pagination {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 9%;
+    bottom: 60px;
+    font-size: 15px;
+    z-index: 5;
+    width: 200px;
+    color: #ffffffcc;
+}
+
+.pagination .hero-slider-dots {
+    width: 100%;
+    height: 2px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.pagination .hero-slider-dots span {
+    width: calc(100% / 3);
+    display: flex;
+    height: 100%;
+    background-color: #fff;
+    opacity: .3;
+}
+
+.pagination .hero-slider-dots span.active {
+    background: white !important;
+    opacity: 1;
+}
+
+.pagination .slide-btn {
+    padding-bottom: 10px;
+}
+
+.nav-btns {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-btns .swiper-button-prevs {
+    justify-content: start;
+}
+
+.nav-btns .swiper-button-nexts {
+    justify-content: end;
+}
+
+.nav-btns span {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-btns span .fa-solid {
+    display: none;
+}
+
+.nav-btns span .fa-solid.active {
+    display: flex;
+}
+
+.nav-btns button {
+    background: none;
+    border: none;
+    color: #fff;
+    display: flex;
+    height: fit-content;
+    gap: 10px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Remove default Swiper arrows */
+.swiper-button-prevs::after,
+.swiper-button-nexts::after {
+    display: none;
+}
+
+/* ================= Scroll Indicator ================= */
+.scroll-indicator {
+    position: absolute;
+    right: 40px;
+    bottom: 261px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 11;
+}
+
+.scroll-indicator span {
+    width: 4px;
+    height: 18px;
+    background: #d0d4d9;
+}
+
+
+/* ================= News Section ================= */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.section-title {
+    position: relative;
+    font-family: "Lato", sans-serif;
+    color: #464646;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.section-title .heading {
+    position: absolute;
+    padding: 8px 20px;
+
+    font-weight: bold;
+    box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.2);
+    left: -18px;
+    top: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* ===== GRID STRUCTURE ===== */
+
+.news-grid-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.news-grid-bottom {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    height: 100%;
+    margin-top: 30px;
+}
+
+/* ===== NEWS CARD ===== */
+
+.news-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #fff;
+    overflow: hidden;
+}
+
+.news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 30px;
+    position: relative;
+}
+
+.news-content .tag {
+    text-transform: uppercase;
+    color: #4a90e2;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.news-content h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.news-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/* ===== FACTS CARD ===== */
+
+.facts-card {
+    background: #1a4174;
+    color: #fff;
+    padding: 30px;
+    position: relative;
+}
+
+.facts-card h3 {
+    margin: 10px 0;
+}
+
+.facts-card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.facts-card a {
+    color: #fff;
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+/* .shubhkart-swiper-slide .showcase-bg {
+    scale: 0.9;
+} */
+
+.tag.white {
+    color: #fff;
+}
+
+/* ===== SOCIAL CARDS ===== */
+
+.social-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.social-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.social-card .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.social-card .icon {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.social-card p {
+    font-size: 14px;
+}
+
+.social-card small {
+    opacity: 0.8;
+    margin-top: 8px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+
+    .news-grid-top,
+    .news-grid-bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .news-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+/* ================= Banner Section ================= */
+.bannerSection {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-height: 700px;
+    overflow: hidden;
+}
+
+/* Image */
+.bannerSection picture,
+.bannerSection img.bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay */
+/* Icon overlay (optional layer) */
+.imageOverlayBnr {
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.marker {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+/* ================= Caption ================= */
+.bannerCaption {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    max-width: 520px;
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+}
+
+.bannerCaption em {
+    display: block;
+    font-style: normal;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.bannerCaption .description a .fa-solid {
+    color: white;
+}
+
+.bannerCaption .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ffffffcc;
+}
+
+.bannerCaption .arrow {
+    display: inline-block;
+    margin-top: 16px;
+    width: 26px;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 991px) {
+    .bannerCaption {
+        left: 60px;
+        bottom: 120px;
+    }
+}
+
+@media (max-width: 767px) {
+    .bannerSection {
+        height: 85vh;
+    }
+
+    .bannerCaption {
+        left: 24px;
+        bottom: 80px;
+        max-width: 90%;
+    }
+
+    .bannerCaption .description {
+        font-size: 14px;
+    }
+}
+
+
+/* ================= Careers Section ================= */
+.careers-section {
+    background: var(--bg3-color);
+    padding: 80px 60px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ================= GRID LAYOUT (CORE FIX) ================= */
+.careers-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.career-image {
+    height: 100%;
+    padding: 0;
+}
+
+.career-card-help {
+    height: 102%;
+    width: 40%;
+}
+
+.career-dark,
+.career-stats {
+    width: calc(100% / 2 - 15px);
+}
+
+.career-blue {
+    background: var(--bg1-color);
+    color: var(--bg3-color);
+}
+
+.career-card-right {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.career-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.career-image .card-label {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    color: var(--bg3-color);
+}
+
+/* ================= RIGHT TOP BIG CARD ================= */
+.career-highlight {
+    background: var(--bg1-color);
+    color: var(--bg3-color);
+    width: 100%;
+}
+
+.small-title {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* Highlight inner box */
+.highlight-box {
+    background: #be4246;
+    padding: 40px;
+    max-width: 420px;
+    margin-top: 40px;
+}
+
+.highlight-box h2 {
+    font-size: 26px;
+    margin-bottom: 14px;
+    color: var(--bg3-color);
+}
+
+.careers-section p {
+    font-size: 14px;
+    opacity: 0.85;
+}
+.career-stats{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.career-stats img{
+    
+    margin: 20px 0 0px;
+}
+.career-dark,
+.career-stats,
+.career-blue {
+    height: 300px;
+}
+
+/* ================= RIGHT BOTTOM LEFT ================= */
+.career-dark {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background: #b3b3b3;
+}
+
+/* ================= RIGHT BOTTOM RIGHT ================= */
+.career-stats {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background: #b3b3b3;
+    text-align: center;
+}
+
+.career-stats h2 {
+    font-size: 36px;
+    margin: 0px 0 10px;
+    color: var(--bg2-color);
+}
+
+/* ================= BASE CARD STYLE ================= */
+.career-card {
+    position: relative;
+    padding: 32px;
+    overflow: hidden;
+}
+
+/* ================= LABEL ================= */
+.card-label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+/* ================= ARROW ================= */
+.arrow {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    font-size: 22px;
+    opacity: 0.8;
+}
+
+.career-highlight .arrow {
+    color: var(--bg3-color);
+}
+
+.career-dark .arrow,
+.career-stats .arrow {
+    color: var(--bg2-color);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+    .careers-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .career-card-help,
+    .career-highlight,
+    .career-dark,
+    .career-stats {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
+
+
+.brand-showcase-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Main slider */
+.brandShowcaseMain,
+.brandShowcaseMain .swiper-slide {
+    height: 100vh;
+}
+
+.showcase-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.showcase-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* Content */
+.showcase-content {
+    position: absolute;
+    left: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #fff;
+}
+
+.showcase-tag {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 12px;
+    font-size: 12px;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.showcase-content h1 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.showcase-btn {
+    background: var(--gold-color);
+    color: #000;
+    padding: 10px 22px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Right mockup */
+.showcase-mockup {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80%;
+    z-index: 2;
+}
+
+/* Thumbnails */
+.brandShowcaseThumbs {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 111;
+}
+
+.brandShowcaseThumbs-hlp {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    left: 0;
+    right: 0;
+    z-index: 111;
+    height: fit-content;
+    padding: 20px 0;
+}
+
+.brandShowcaseThumbs-hlp::after {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.brandShowcaseThumbs .swiper-slide {
+    width: calc(100% / 6 - 10px) !important;
+    height: 90px;
+    cursor: pointer;
+}
+
+.brandShowcaseThumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.brandShowcaseThumbs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Arrow */
+.showcase-next {
+    position: absolute;
+    right: 60px;
+    top: 90%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    color: #fff;
+    z-index: 111;
+    cursor: pointer;
+}
+
+.showcase-prev {
+    position: absolute;
+    left: 60px;
+    top: 90%;
+    transform: translateY(-50%);
+    font-size: 28px;
+    color: #fff;
+    z-index: 111;
+    cursor: pointer;
+}
+
+
+
+.pittie-footer {
+  background: var(--bg3-color);          /* white */
+  color: var(--bg2-color);               /* black */
+  padding: 64px 0 32px;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Grid */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 1.4fr;
+  gap: 40px;
+}
+
+/* Column heading */
+.footer-col h6 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: var(--bg2-color);               /* black */
+  font-weight: 600;
+}
+
+/* Links */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: var(--text-color);              /* black */
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-col ul li a:hover {
+  color: var(--button-color);            /* red on hover */
+  opacity: 1;
+}
+
+/* Right Section */
+.footer-right {
+  border-left: 1px solid #e0e0e0;
+  padding-left: 32px;
+}
+
+/* Social Icons */
+.footer-socials {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.footer-socials a {
+  color: var(--bg2-color);               /* black */
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.footer-socials a:hover {
+  opacity: 1;
+}
+
+/* Newsletter */
+.footer-newsletter {
+  display: flex;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.footer-newsletter input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 12px;
+  color: var(--bg2-color);               /* black */
+  outline: none;
+}
+
+.footer-newsletter input::placeholder {
+  color: #777;
+}
+
+.footer-newsletter button {
+  background: var(--button-color);       /* red */
+  border: none;
+  color: #fff;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+/* Logo */
+.footer-logo img {
+  max-width: 140px;
+  scale: 1.3;
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 48px;
+  font-size: 13px;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-right {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 32px;
+  }
+}
