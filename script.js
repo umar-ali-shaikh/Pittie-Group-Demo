@@ -1,26 +1,136 @@
+ const menuBtn = document.querySelector(".main-header-manu");
+  const nav = document.querySelector(".main-nav");
+
+  menuBtn.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+
+  // Optional: close menu on link click (mobile UX)
+  document.querySelectorAll(".main-nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("active");
+    });
+  });
 
 
 
+if (window.innerWidth >= 992) {
+  gsap.registerPlugin(ScrollTrigger);
+
+  /* =========================
+     LENIS SETUP
+  ========================= */
+  const lenis = new Lenis({
+    duration: 1,
+    easing: (t) => 1 - Math.pow(1 - t, 6),
+    smoothWheel: true,
+    smoothTouch: false,
+    lerp: 0.05,
+    wheelMultiplier: 0.8
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    ScrollTrigger.update();
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+  gsap.ticker.lagSmoothing(0);
+
+  /* =========================
+     SMOOTH SECTION (FULL SNAP)
+  ========================= */
+  document.querySelectorAll(".smooth-section").forEach(section => {
+    ScrollTrigger.create({
+      trigger: section,
+      start: "top top",
+      end: "bottom top",
+
+      onEnter: () => {
+        lenis.scrollTo(section);
+      },
+
+      onLeave: () => {
+        lenis.scrollTo(section.nextElementSibling);
+      },
+
+      onEnterBack: () => {
+        lenis.scrollTo(section);
+      }
+    });
+  });
+
+  /* =========================
+     CONTENT SECTION (FREE SCROLL)
+  ========================= */
+  document.querySelectorAll(".content-section").forEach(section => {
+    ScrollTrigger.create({
+      trigger: section,
+      start: "top top",
+      end: "bottom bottom"
+      // ❌ no snapping here
+    });
+  });
+
+  /* =========================
+     RESIZE SAFE
+  ========================= */
+  window.addEventListener("resize", () => {
+    ScrollTrigger.refresh();
+  });
+}
 
 
 
+const indicatorItems = document.querySelectorAll(".scroll-indicator a span");
+const sections = document.querySelectorAll("section[id]");
 
+/* ======================
+   CLICK → ACTIVE
+====================== */
+indicatorItems.forEach(item => {
+  item.addEventListener("click", (e) => {
+    e.preventDefault();
 
+    const targetId = item.querySelector("a").getAttribute("href");
+    const targetSection = document.querySelector(targetId);
 
+    // remove active
+    indicatorItems.forEach(i => i.classList.remove("active"));
 
+    // add active
+    item.classList.add("active");
 
+    // smooth scroll
+    targetSection.scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});
 
+/* ======================
+   SCROLL → ACTIVE
+====================== */
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute("id");
 
+        indicatorItems.forEach(item => {
+          const link = item.querySelector("a").getAttribute("href");
 
+          item.classList.toggle("active", link === `#${id}`);
+        });
+      }
+    });
+  },
+  {
+    threshold: 0.6   // section 60% visible
+  }
+);
 
-
-
-
-
-
-
-
-
+sections.forEach(section => observer.observe(section));
 
 
 
@@ -84,41 +194,55 @@ updatePagination(swiper.realIndex);
 
 
 
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
 
   const thumbSlider = new Swiper(".brandShowcaseThumbs", {
     slidesPerView: 6,
-    spaceBetween: 12,
+    spaceBetween: 0,
     watchSlidesProgress: true,
-    loop: true,              // 🔥 MUST
-    speed: 600
-  });
+    loop: true,
+    speed: 600,
 
+    /* 🔥 TOUCH ENABLE */
+    allowTouchMove: true,
+    touchRatio: 1,
+    resistanceRatio: 0.65,
+
+    breakpoints: {
+      0: {
+        slidesPerView: 4,
+        allowTouchMove: true
+      },
+      768: {
+        slidesPerView: 6,
+        allowTouchMove: true
+      }
+    }
+  });
 
   const mainSlider = new Swiper(".brandShowcaseMain", {
     slidesPerView: 1,
     spaceBetween: 0,
     speed: 900,
 
-    loop: true,              // 🔥 MUST
-    loopedSlides: 6,         // 🔥 VERY IMPORTANT (>= thumb count)
+    loop: true,
+    loopedSlides: 6,
 
     autoplay: {
       delay: 4500,
       disableOnInteraction: false
     },
 
+    /* 🔥 TOUCH ENABLE */
+    allowTouchMove: true,
+    grabCursor: true,
+    touchRatio: 1,
+    resistanceRatio: 0.85,
+
     thumbs: {
       swiper: thumbSlider
     }
   });
-
-
 
   /* SAFE ARROW CONTROLS */
   const nextBtn = document.querySelector(".showcase-next");
@@ -136,6 +260,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-
-
 });
+
