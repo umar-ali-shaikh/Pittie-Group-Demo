@@ -82,24 +82,28 @@ if (window.innerWidth >= 992) {
 
 
 
-const indicatorItems = document.querySelectorAll(".scroll-indicator a span");
+const indicatorItems = document.querySelectorAll(".scroll-indicator a");
 const sections = document.querySelectorAll("section[id]");
 
 /* ======================
    CLICK → ACTIVE
 ====================== */
-indicatorItems.forEach(item => {
-  item.addEventListener("click", (e) => {
+indicatorItems.forEach(link => {
+  link.addEventListener("click", (e) => {
     e.preventDefault();
 
-    const targetId = item.querySelector("a").getAttribute("href");
+    const targetId = link.getAttribute("href");
     const targetSection = document.querySelector(targetId);
 
+    if (!targetSection) return;
+
     // remove active
-    indicatorItems.forEach(i => i.classList.remove("active"));
+    indicatorItems.forEach(i => 
+      i.querySelector("span")?.classList.remove("active")
+    );
 
     // add active
-    item.classList.add("active");
+    link.querySelector("span")?.classList.add("active");
 
     // smooth scroll
     targetSection.scrollIntoView({
@@ -107,6 +111,7 @@ indicatorItems.forEach(item => {
     });
   });
 });
+
 
 /* ======================
    SCROLL → ACTIVE
