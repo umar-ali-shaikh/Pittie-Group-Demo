@@ -1241,3 +1241,18 @@ body.dark-mode .main-header {
         padding-bottom: 40px !important;
     }
 }
+
+
+/* Blog and video section  */
+
+.video-wrapper {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.news-video {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+}
