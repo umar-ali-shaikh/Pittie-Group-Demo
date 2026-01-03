@@ -1,0 +1,200 @@
+content-section :
+jaade content ka liye + smooth scroll
+
+smooth-section :
+ normal smoth scroll ka liye + smooth + 100vh scroll
+
+
+
+ 
+gsap.registerPlugin(ScrollTrigger);
+
+/* =========================
+   LENIS – NATURAL SMOOTHNESS
+========================= */
+const lenis = new Lenis({
+  duration: 1,                 // ⬆ slightly longer glide
+  easing: (t) => 1 - Math.pow(1 - t, 6), // ⬆ softer tail
+  smoothWheel: true,
+  smoothTouch: false,             // ❗ mobile natural rahe
+  lerp: 0.03,                    // ⬆ smoother interpolation
+  wheelMultiplier: 0.7            // ⬆ controlled scroll power
+});
+
+
+/* SINGLE RAF */
+function raf(time) {
+  lenis.raf(time);
+  ScrollTrigger.update();
+  requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
+gsap.ticker.lagSmoothing(0);
+
+/* =========================
+   SMART SECTION LOGIC
+========================= */
+const sections = gsap.utils.toArray(".smooth-section");
+
+sections.forEach((section, index) => {
+  const isContent =
+    section.scrollHeight > window.innerHeight + 60;
+
+  ScrollTrigger.create({
+    trigger: section,
+    start: "top top",
+    end: "bottom top",
+
+    onUpdate(self) {
+      const progress = self.progress; // 0 → 1
+
+      /* -------------------------
+         SHORT / 100vh SECTION
+      ------------------------- */
+      if (!isContent) {
+        if (progress < 0.3) {
+          self.scroll(self.start); // 🔁 snap back to top
+        } else {
+          self.scroll(self.end);   // ➡️ next section
+        }
+      }
+
+      /* -------------------------
+         CONTENT SECTION
+      ------------------------- */
+      else {
+        // Allow free scrolling
+        if (progress >= 0.98) {
+          self.scroll(self.end);   // snap after content end
+        }
+      }
+    }
+  });
+});
+
+/* =========================
+   RESIZE SAFE
+========================= */
+window.addEventListener("resize", () => {
+  ScrollTrigger.refresh();
+});
+
+
+
+
+
+
+
+.pittie-footer {
+  background: var(--bg1-color);
+  color: var(--bg2-color);
+  padding: 64px 0 32px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 1.4fr;
+  gap: 40px;
+}
+
+.footer-col h6 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: var(--bg3-color);
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #dce3f1;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+  color: var(--button-color);
+}
+
+/* Right Section */
+.footer-right {
+  border-left: 1px solid rgba(255,255,255,0.2);
+  padding-left: 32px;
+}
+
+/* Socials */
+.footer-socials {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.footer-socials a {
+  color: var(--bg3-color);
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-socials a:hover {
+  opacity: 1;
+}
+
+/* Newsletter */
+.footer-newsletter {
+  display: flex;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.footer-newsletter input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 12px;
+  color: #fff;
+  outline: none;
+}
+
+.footer-newsletter button {
+  background: var(--button-color);
+  border: none;
+  color: #fff;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+/* Logo */
+.footer-logo img {
+  max-width: 140px;
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 48px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-right {
+    border-left: none;
+    padding-left: 0;
+  }
+}

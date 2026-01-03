@@ -5,7 +5,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- font awesome -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="template.css" />
+  <link rel="stylesheet" href="responsive.css" />
 </head>
 
 <body>
@@ -15,72 +28,140 @@
       <img src="adani_template/assets/cropped-Group-1.png" alt="Pittie Group Logo" />
     </div>
     <nav class="nav">
-      <a href="#">About Us</a>
-      <a href="#">Businesses</a>
-      <a href="#">Sustainability</a>
+      <a href="index.html">template1</a>
+      <a href="index1.html">template2</a>
+      <a href="template.html" class="active">template3</a>
       <a href="#">Investors</a>
       <a href="#">Newsroom</a>
       <a href="#">Careers</a>
     </nav>
 
-    <div class="header-actions">
-      <span>ENG</span>
-      <span>🔍</span>
-    </div>
+    <!-- <div class="header-actions">
+        <span>ENG</span>
+        <span>🔍</span>
+      </div> -->
   </header>
 
   <!-- ================= HERO ================= -->
-  <section class="hero">
-    <!-- Background Image -->
-    <div class="hero-bg">
-      <img src="https://www.adani.com/-/media/project/adaniv1/banners/airportdesktop-banner1v1.jpg" alt="" />
-    </div>
+  <section class="pittie-project-section sectionaddactive" id="pittie-projects">
+    <!-- <div class="pittie-project-content">
+      <h2 class="section-mainhd">Pittie Group Projects</h2>
+    </div> -->
 
-    <!-- Content Wrapper -->
-    <div class="hero-inner">
-      <!-- LEFT CONTENT -->
-      <div class="hero-content">
-        <h1>
-          India's Largest Private Sector<br />
-          Thermal Power Generation Company
-        </h1>
-        <p>Adani Power Ltd</p>
-
-        <a href="#" class="btn-outline">Know More</a>
-      </div>
-
-      <!-- RIGHT SLIDER -->
-      <div class="hero-slider">
-        <div class="slider-track">
-          <div class="slide active">
-            <img src="https://www.adani.com/-/media/project/adaniv1/banners/airportdesktop-banner1v1.jpg" alt="" />
-          </div>
-
-          <div class="slide">
-            <img
-              src="https://www.adani.com/-/media/project/adaniv1/home/homepage-spotlight/dji_0389_destop_1920x1080.webp"
-              alt="" />
-          </div>
-
-          <div class="slide">
-            <img
-              src="https://www.adani.com/-/media/project/adaniv1/revised-images/spotlight/resize_spotlight/new/spotlight-driving-indias.webp"
-              alt="" />
-          </div>
-
-          <div class="slide">
-            <img
-              src="https://www.adani.com/-/media/project/adaniv1/home/homepage-spotlight/dji_0389_destop_1920x1080.webp"
-              alt="" />
+    <div class="pittie-carousel pittie-project">
+      <!-- list item -->
+      <div class="pittie-list">
+        <!-- 
+        <div class="pittie-item">
+          <img src="adani_template/assets/epic.jpg">
+          <div class="pittie-content">
+            <div class="pittie-title">Pittie Consumer V2</div>
+            <div class="pittie-topic">FMCG Website Revamp</div>
+            <div class="pittie-buttons">
+              <button><a href="">SEE MORE</a></button>
+            </div>
           </div>
         </div>
 
-        <!-- Navigation -->
-        <div class="slider-nav">
-          <button id="prev">‹</button>
-          <button id="next">›</button>
+        <div class="pittie-item">
+          <img src="adani_template/assets/Realty.jpg">
+          <div class="pittie-content">
+            <div class="pittie-title">Pittie Consumer V2</div>
+            <div class="pittie-topic">FMCG Website Revamp</div>
+            <div class="pittie-buttons">
+              <button><a href="">SEE MORE</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pittie-item">
+          <img src="adani_template/assets/product-range.jpg">
+          <div class="pittie-content">
+            <div class="pittie-title">Pittie Consumer V2</div>
+            <div class="pittie-topic">FMCG Website Revamp</div>
+            <div class="pittie-buttons">
+              <button><a href="">SEE MORE</a></button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="pittie-item">
+          <img src="assets/homepage/logistics.jpg">
+          <div class="pittie-content">
+            <div class="pittie-title">Pittie Consumer V2</div>
+            <div class="pittie-topic">FMCG Website Revamp</div>
+            <div class="pittie-buttons">
+              <button><a href="">SEE MORE</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pittie-item">
+          <img src="adani_template/assets/warehouse-inside.jpg">
+          <div class="pittie-content">
+            <div class="pittie-title">Pittie Consumer V2</div>
+            <div class="pittie-topic">FMCG Website Revamp</div>
+            <div class="pittie-buttons">
+              <button><a href="">SEE MORE</a></button>
+            </div>
+          </div>
+        </div> 
+        
+        -->
+
+        <div class="pittie-item">
+          <img src="adani_template/assets/warehouse-outside.jpg" />
+          <div class="pittie-content">
+            <div class="pittie-title">
+              Building businesses. Shaping futures.
+            </div>
+            <!-- <div class="pittie-topic">FMCG Website Revamp</div> -->
+            <div class="pittie-buttons">
+              <button><a href="">SEE MORE</a></button>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- thumbnail (STRUCTURE SAME) -->
+      <div class="pittie-thumbnail">
+        <!-- <div class="pittie-thumb-item">
+          <img src="adani_template/assets/Realty.jpg">
+        </div>
+
+        <div class="pittie-thumb-item">
+          <img src="adani_template/assets/product-range.jpg">
+        </div>
+        <div class="pittie-thumb-item">
+          <img src="adani_template/assets/warehouse-inside.jpg">
+        </div>
+
+        <div class="pittie-thumb-item">
+          <img src="adani_template/assets/logistics.jpg">
+        </div>
+
+        <div class="pittie-thumb-item">
+          <img src="adani_template/assets/epic.jpg">
+        </div> -->
+
+        <!-- <div class="pittie-thumb-item">
+            <img src="adani_template/assets/warehouse-outside.jpg" />
+          </div> -->
+      </div>
+
+      <!-- arrows -->
+      <!-- <div class="pittie-arrows">
+          <button id="pittie-prev">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button id="pittie-next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div> -->
+
+      <!-- time running -->
+      <!-- <div class="pittie-time"></div> -->
     </div>
   </section>
 
@@ -89,35 +170,742 @@
     <div class="growth-wrapper">
       <!-- LEFT IMAGE -->
       <div class="growth-left">
-        <img src="adani_template/assets/Aditya-Pittie.png" alt="Aditya Pittie" />
+        <img src="adani_template/assets/Aditya-Pittie.jpg" alt="Aditya Pittie" />
       </div>
 
       <!-- RIGHT CONTENT -->
       <div class="growth-right">
-        <blockquote class="quote-box">
-          <p>
-            The real advantage today isn’t size — it’s speed. The companies
-            that win are the ones that imagine boldly, execute daily, and use
-            technology to outthink, outperform, and outpace.
-          </p>
+        <div id="growth-content">
+          <blockquote class="quote-box">
+            <p>
+              The real advantage today isn’t size — it’s speed. The companies
+              that win are the ones that imagine boldly, execute daily, and
+              use technology to outthink, outperform, and outpace.
+            </p>
 
-          <!-- Speech bubble tail -->
-          <span class="quote-tail">
-            <img src="https://www.adani.com/assets/adaniv1/dist/images/growthsec/profile-down-arrow.svg" alt="">
-          </span>
-        </blockquote>
+            <span class="quote-tail">
+              <img src="https://www.adani.com/assets/adaniv1/dist/images/growthsec/profile-down-arrow.svg" alt="" />
+            </span>
+          </blockquote>
 
-        <div class="profile-info">
-          <div>
-            <h4>Aditya Pittie</h4>
-            <span>Managing Director, Pittie Group</span>
+          <div class="profile-info">
+            <div>
+              <h4>Aditya Pittie</h4>
+              <span>Managing Director, Pittie Group</span>
+            </div>
+
+            <!-- <a href="#" class="btn-outline">View Profile</a> -->
           </div>
-
-          <a href="#" class="btn-outline">View Profile</a>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Card Section -->
+  <section class="numbers-section">
+    <div class="biz-header">
+      <div class="biz-nav">
+        <h2 class="biz-title active">BUSINESSES VERTICALS</h2>
+      </div>
+    </div>
+    <div class="numbers-wrap">
+      <!-- LEFT SIDE -->
+      <div class="numbers-left">
+        <!-- TABS -->
+        <div class="numbers-tabs">
+          <button class="tab active">Realty</button>
+          <button class="tab">Consumer</button>
+          <button class="tab">Media</button>
+          <button class="tab">Logistics</button>
+        </div>
+
+        <!-- Realty -->
+        <div class="numbers-tabs-item active">
+          <!-- TITLE -->
+          <div class="numbers-title">
+            <h2>Our Properties</h2>
+            <span class="badge">7 PROPERTIES</span>
+          </div>
+
+          <!-- CARDS -->
+          <div class="property-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide property-card">
+                <img src="https://pittiegroup.com/wp-content/uploads/2023/04/Pittie-Paradise.png"
+                  alt="Pittie Paradise" />
+                <h4>PITTIE PARADISE</h4>
+              </div>
+
+              <div class="swiper-slide property-card">
+                <img src="https://pittiegroup.com/wp-content/uploads/2023/04/Veerpratap_entrance.png"
+                  alt="Veerpratap Industrial Park" />
+                <h4>VEERPRATAP INDUSTRIAL PARK</h4>
+              </div>
+
+              <div class="swiper-slide property-card">
+                <img src="https://pittiegroup.com/wp-content/uploads/2023/04/Antariksha.png" alt="Antariksh" />
+                <h4>ANTARIKSH</h4>
+              </div>
+
+              <div class="swiper-slide property-card">
+                <img src="https://pittiegroup.com/wp-content/uploads/2023/04/Vaibhav-Chambers-Night-View.png"
+                  alt="Vaibhav Chambers" />
+                <h4>VAIBHAV CHAMBERS</h4>
+              </div>
+
+              <div class="swiper-slide property-card">
+                <img src="https://pittiegroup.com/wp-content/uploads/2023/04/Pittie-Chambers-Night.png"
+                  alt="Pittie Chambers" />
+                <h4>PITTIE CHAMBERS</h4>
+              </div>
+
+              <div class="swiper-slide property-card">
+                <img src="https://pittiegroup.com/wp-content/uploads/2023/04/soho.png" alt="Soho House &amp; Co" />
+                <h4>SOHO HOUSE &amp; CO</h4>
+              </div>
+
+              <div class="swiper-slide property-card">
+                <img src="https://pittiegroup.com/wp-content/uploads/2023/07/Main-Image1.jpg"
+                  alt="Veerpratap Enclave" />
+                <h4>VEERPRATAP ENCLAVE</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Consumer -->
+        <div class="numbers-tabs-item">
+          <!-- TITLE -->
+          <div class="numbers-title">
+            <h2>Our Properties</h2>
+            <span class="badge">20+ BRANDS</span>
+          </div>
+
+          <!-- CARDS -->
+          <div class="consumer-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/1.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/2-1.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/3-1.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/4-1.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/5-1.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/6-1.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/7-1.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/8-2.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/9-1.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/10-1.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/11-1.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/12-1.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/13.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/14.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/15.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/17.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/18.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/19.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/20.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/21.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/35.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/36.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Media -->
+        <div class="numbers-tabs-item">
+          <!-- TITLE -->
+          <div class="numbers-title">
+            <h2>Our Platforms</h2>
+            <span class="badge">12+ Channels</span>
+          </div>
+
+          <!-- CARDS -->
+          <div class="consumer-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/22.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/23.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/24.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/25.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/26.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/27.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/28.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/29.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/30.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/31.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/32.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/33.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper-slide logo-grid">
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/06/34.jpg" alt="" />
+                </div>
+                <div class="logo-grid-item">
+                  <img src="https://pittiegroup.com/wp-content/uploads/2023/11/louder_390-x-204-1.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logistics  -->
+        <div class="numbers-tabs-item">
+          <!-- TITLE -->
+          <div class="numbers-title">
+            <h2>Our Warehouses</h2>
+            <span class="badge">18+ Warehouses</span>
+          </div>
+
+          <!-- CARDS -->
+          <div class="property-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide property-card">
+                <img src="https://pittiegroup.com/wp-content/uploads/2023/03/superstockist.png" alt="SUPERSTOCKIST" />
+                <h4>SUPERSTOCKIST</h4>
+              </div>
+
+              <div class="swiper-slide property-card">
+                <img src="https://pittiegroup.com/wp-content/uploads/2023/03/build-to-suit.png" alt="BUILD-TO-SUIT" />
+                <h4>BUILD-TO-SUIT</h4>
+              </div>
+
+              <div class="swiper-slide property-card">
+                <img src="https://pittiegroup.com/wp-content/uploads/2023/03/carry-forward-partners.png"
+                  alt="CARRY &amp; FORWARD PARTNERS" />
+                <h4>CARRY &amp; FORWARD PARTNERS</h4>
+              </div>
+
+              <div class="swiper-slide property-card">
+                <img src="https://pittiegroup.com/wp-content/uploads/2023/03/superstockist.png" alt="SUPERSTOCKIST" />
+                <h4>SUPERSTOCKIST</h4>
+              </div>
+
+              <div class="swiper-slide property-card">
+                <img src="https://pittiegroup.com/wp-content/uploads/2023/03/build-to-suit.png" alt="BUILD-TO-SUIT" />
+                <h4>BUILD-TO-SUIT</h4>
+              </div>
+
+              <div class="swiper-slide property-card">
+                <img src="https://pittiegroup.com/wp-content/uploads/2023/03/carry-forward-partners.png"
+                  alt="CARRY &amp; FORWARD PARTNERS" />
+                <h4>CARRY &amp; FORWARD PARTNERS</h4>
+              </div>
+
+              <div class="swiper-slide property-card">
+                <img src="https://pittiegroup.com/wp-content/uploads/2023/03/superstockist.png" alt="SUPERSTOCKIST" />
+                <h4>SUPERSTOCKIST</h4>
+              </div>
+
+              <div class="swiper-slide property-card">
+                <img src="https://pittiegroup.com/wp-content/uploads/2023/03/build-to-suit.png" alt="BUILD-TO-SUIT" />
+                <h4>BUILD-TO-SUIT</h4>
+              </div>
+
+              <div class="swiper-slide property-card">
+                <img src="https://pittiegroup.com/wp-content/uploads/2023/03/carry-forward-partners.png"
+                  alt="CARRY &amp; FORWARD PARTNERS" />
+                <h4>CARRY &amp; FORWARD PARTNERS</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <video src="adani_template/assets/business-bg-video-pc.mp4" autoplay loop muted playsinline></video>
+      </div>
+
+      <!-- RIGHT SIDE STATS -->
+      <div class="numbers-right">
+        <!-- Realty -->
+        <div class="numbers-right-content">
+          <div class="stat-box">
+            <h3>2+</h3>
+            <p>CITIES</p>
+            <img src="adani_template/assets/business-construction.svg" alt="" />
+          </div>
+
+          <div class="stat-box">
+            <h3>7+</h3>
+            <p>NO OF PROJECTS</p>
+            <img src="adani_template/assets/business-logistics2.svg" alt="" />
+          </div>
+
+          <div class="stat-box">
+            <h3>2</h3>
+            <p>UPCOMING PROJECTS</p>
+            <img src="adani_template/assets/business-realty.svg" alt="" />
+          </div>
+
+          <div class="stat-box">
+            <h3>10K</h3>
+            <p>UNITS DELIVERED</p>
+            <img src="adani_template/assets/business-media.svg" alt="" />
+          </div>
+        </div>
+        <!-- Consumer -->
+        <div class="numbers-right-content active">
+          <div class="stat-box">
+            <h3>5+</h3>
+            <p>Manufacturing Plants</p>
+            <img src="adani_template/assets/business-consumer-factory.png" alt="" />
+          </div>
+          <div class="stat-box">
+            <h3>23</h3>
+            <p>BRANDS</p>
+            <img src="adani_template/assets/business-consumer-tag.svg" alt="" />
+          </div>
+
+          <div class="stat-box">
+            <h3>400+</h3>
+            <p>No. of Products Served</p>
+            <img src="adani_template/assets/business-realty.svg" alt="" />
+          </div>
+
+          <div class="stat-box">
+            <h3>20+</h3>
+            <p>COUNTRIES SERVED</p>
+            <img src="adani_template/assets/business-consumer-globe.svg" alt="" />
+          </div>
+        </div>
+
+        <!-- Media -->
+        <div class="numbers-right-content">
+          <div class="stat-box">
+            <h3>7+</h3>
+            <p>Number of Channels</p>
+            <img src="adani_template/assets/business-construction.svg" alt="" />
+          </div>
+
+          <div class="stat-box">
+            <h3>138M</h3>
+            <p>TOTAL REACH</p>
+            <img src="adani_template/assets/business-logistics2.svg" alt="" />
+          </div>
+
+          <div class="stat-box">
+            <h3>5+</h3>
+            <p>BUSINESSES</p>
+            <img src="adani_template/assets/business-realty.svg" alt="" />
+          </div>
+
+          <div class="stat-box">
+            <h3>400+</h3>
+            <p>PEOPLE</p>
+            <img src="adani_template/assets/business-media.svg" alt="" />
+          </div>
+        </div>
+
+        <!-- Logistics -->
+        <div class="numbers-right-content">
+          <div class="stat-box">
+            <h3>18+</h3>
+            <p>WAREHOUSES</p>
+            <img src="adani_template/assets/business-construction.svg" alt="" />
+          </div>
+
+          <div class="stat-box">
+            <h3>40+</h3>
+            <p>NO OF BRAND SERVED</p>
+            <img src="adani_template/assets/business-logistics2.svg" alt="" />
+          </div>
+
+          <div class="stat-box">
+            <h3>500+</h3>
+            <p>FLEET</p>
+            <img src="adani_template/assets/business-realty.svg" alt="" />
+          </div>
+
+          <div class="stat-box">
+            <h3>5K+</h3>
+            <p>Stores Serviced</p>
+            <img src="adani_template/assets/business-media.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pittie-sustainability">
+    <div class="pittie-panels">
+      <div class="pittie-panel active" style="
+            background-image: url('./adani_template/assets/1172\ ×\ 772\ px\ 3.1\ 1.png');
+          ">
+        <div class="panel-content-in">
+          <h2>
+            Gau-Based <br />
+            Products
+          </h2>
+          <span class="panel-box">
+            <h3>Gau-Based Products</h3>
+            <button>
+              <a href="#">
+                Our Community Impact
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </button>
+          </span>
+        </div>
+        <div class="panel-content-out">
+          <span class="panel-tag">Gau-Based Products</span>
+        </div>
+      </div>
+
+      <div class="pittie-panel" style="background-image: url('./adani_template/assets/14.png')">
+        <div class="panel-content-in">
+          <h2>People & <br />Planet First</h2>
+          <span class="panel-box">
+            <h3>Impact Beyond Business</h3>
+            <button>
+              <a href="#">
+                Our Environmental Impact
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </button>
+          </span>
+        </div>
+        <div class="panel-content-out">
+          <span class="panel-tag">People & Planet First</span>
+        </div>
+      </div>
+
+      <div class="pittie-panel" style="background-image: url('./adani_template/assets/12.png')">
+        <div class="panel-content-in">
+          <h2>
+            Our Work<br />
+            Force
+          </h2>
+          <span class="panel-box">
+            <h3>Our Strength: Our Workforce</h3>
+            <button>
+              <a href="#">
+                Impacting So Many Lives
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </button>
+          </span>
+        </div>
+        <div class="panel-content-out">
+          <span class="panel-tag">Our Work Force</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section  -->
+  <section class="latest-news">
+    <div class="news-container">
+      <!-- Header -->
+      <div class="news-header">
+        <h2>LATEST NEWS</h2>
+        <!-- <a href="#" class="view-all-btn">View All</a> -->
+      </div>
+
+      <!-- Cards -->
+      <div class="news-cards">
+        <!-- Card 1 -->
+        <article class="news-card">
+          <div class="news-image">
+            <img src="adani_template/assets/epic.jpg" alt="IN10 Media" />
+          </div>
+          <span class="news-tag">IN10 Media Transformation</span>
+          <!-- <span class="news-date">25 December 2025</span> -->
+          <h4 class="news-title">
+            IN10 Media Network rebrands as The EPIC Company
+          </h4>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="news-card">
+          <div class="news-image">
+            <img src="adani_template/assets/image.jpg" alt="Adani Ports" />
+          </div>
+          <span class="news-tag">Launch Of Web Series</span>
+          <!-- <span class="news-date">23 December 2025</span> -->
+          <h4 class="news-title">Single Papa Review</h4>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="news-card">
+          <div class="news-image">
+            <img src="adani_template/assets/01258.jpg" alt="Adani Cements" />
+          </div>
+          <span class="news-tag">Meet Mr ChaKaaChak</span>
+          <!-- <span class="news-date">22 December 2025</span> -->
+          <h4 class="news-title">
+            Meet Mr ChaKaaChak: MT, Pittie & Branded Kart
+          </h4>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Us section  -->
+  <section class="joinus-section">
+    <div class="joinus-container">
+      <!-- TOP CONTENT -->
+      <div class="joinus-head">
+        <div class="joinus-text">
+          <h2>JOIN US</h2>
+          <p>
+            We believe in people with a can-do spirit, offering them
+            opportunities to learn, lead, and thrive across our growing Pittie
+            Group businesses.
+          </p>
+        </div>
+
+        <!-- <div class="joinus-cta">
+            <a href="#" class="btn-outline">Know More</a>
+          </div> -->
+      </div>
+
+      <!-- IMAGE GRID -->
+      <div class="joinus-grid">
+        <div class="joinus-card active">
+          <img src="adani_template/assets/0125.jpg" alt="" />
+          <div class="joinus-overlay">
+            <span>Job Opportunities</span>
+            <i>→</i>
+          </div>
+        </div>
+
+        <div class="joinus-card">
+          <img src="adani_template/assets/0124.jpg" alt="" />
+          <div class="joinus-overlay">
+            <span>Our Values</span>
+            <i>→</i>
+          </div>
+        </div>
+
+        <div class="joinus-card">
+          <img src="adani_template/assets/0123.jpg" alt="" />
+          <div class="joinus-overlay">
+            <span>Life at Pittie</span>
+            <i>→</i>
+          </div>
+        </div>
+
+        <div class="joinus-card">
+          <img src="adani_template/assets/0981.jpg" alt="" />
+          <div class="joinus-overlay">
+            <span>Diversity &<br />
+              Inclusion</span>
+            <i>→</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section  -->
+  <footer class="site-footer">
+    <div class="footer-main">
+      <!-- LEFT -->
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img src="adani_template/assets/cropped-Group-1.png" alt="" />
+        </div>
+
+        <div class="footer-social">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/pittiegroup/"><img src="adani_template/assets/facebook.png"
+                  alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/aditya_pittie/?hl=en"><img src="adani_template/assets/instagram.png"
+                  alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCh27vWLMnLjm7sd1pCtzGFA/null"><img
+                  src="adani_template/assets/youtube.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/pittie-group/posts/?feedView=all"><img
+                  src="adani_template/assets/linkedin.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://x.com/PittieAditya?t=zB2ZX9G5L4vnZQhxOszW4A&s=09"><img
+                  src="adani_template/assets/twitter.png" alt="" /></a>
+            </li>
+          </ul>
+          <!-- 
+          <a href="#"><img src="adani_template/assets/instagram.png" alt=""></a>
+          <a href="#">▶</a>
+          <a href="#">in</a>
+          <a href="#">X</a> -->
+        </div>
+      </div>
+
+      <!-- ABOUT -->
+      <div class="footer-col">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="#">About Pittie Group</a></li>
+          <li><a href="#">Chairman’s Office</a></li>
+          <li><a href="#">Leadership</a></li>
+          <li><a href="#">Our Journey</a></li>
+          <li><a href="#">Awards</a></li>
+        </ul>
+      </div>
+
+      <!-- BUSINESSES -->
+      <div class="footer-col">
+        <h4>Businesses</h4>
+        <ul>
+          <li><a href="#">Real Estate</a></li>
+          <li><a href="#">Energy & Utilities</a></li>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">Logistics</a></li>
+        </ul>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="footer-col">
+        <ul class="footer-quick">
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Pittie Foundation</a></li>
+          <li><a href="#">Investors</a></li>
+
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- SCROLL TOP -->
+      <!-- <button class="scroll-top" id="scrollTopBtn">⌃</button> -->
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="footer-bottom">
+      <span>© 2025 Pittie Group</span>
+      <div class="footer-legal">
+        <a href="#">Legal Disclaimer</a>
+        <a href="#">Privacy Notice</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- swipperjs -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 
   <script src="template.js"></script>
 </body>

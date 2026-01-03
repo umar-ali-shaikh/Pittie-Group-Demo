@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109.317" height="115.27" viewBox="0 0 109.317 115.27">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f15d63"/>
+      <stop offset="1" stop-color="#ec1c24"/>
+    </linearGradient>
+  </defs>
+  <g id="noun-city-2024690" opacity="0.25">
+    <path id="Path_575" data-name="Path 575" d="M87.653,81.564a10.464,10.464,0,0,0,9.665,10.165V111.06h-14V31.57l-7.5-4.666v-16.5L64.49,4.907V2.074c0-2-3.5-2.666-4.166-.167v3l-11.5,5.5V111.06h-3.5V17.905a2.244,2.244,0,0,0-1.666-2.166L22.33,10.406V8.24a2,2,0,1,0-4,0V46.4l-15.5,6A3.027,3.027,0,0,0,1.5,55.067v56.159a2.2,2.2,0,0,0,0,4.166l104.484.167c3.833,0,3.833-4.5,0-4.5h-5.166v-19.5a10.493,10.493,0,0,0,8.5-10C109.317,67.4,87.653,67.4,87.653,81.564ZM17.164,91.229H13v9.332h4.166Zm19.331-3.5H32.329V96.9h4.166ZM34.828,56.567H30.662V65.9h4.166Zm.333-28H31V37.9h4.166ZM15.831,64.733H11.665V73.9h4.166ZM65.99,77.4H61.824V86.73H65.99Zm.167-53.66H61.99V33.07h4.166Zm10.832,22.33H72.822v9.165h4.166Z" transform="translate(0 -0.289)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
