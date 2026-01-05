@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gucci Mobile View</title>
+    <title>SokkaTableWare Mobile View</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- main css -->
     <link rel="stylesheet" href="Gucci-clone/style.css">
 </head>
 
@@ -14,21 +17,30 @@
         Complimentary Shipping & Returns
     </div>
 
+    <header class="main-header">
+        <div class="container header-inner">
+            <!-- Logo -->
 
-
-    <header id="main-header">
-        <div class="main-header-help">
 
             <div class="logo-container">
-                <svg viewBox="0 0 1312 210">
-                    <path
-                        d="M0 104.57C0 44.8817 47.7192 0 111.198 0C137.048 0 159.565 7.14969 180.162 21.426C191.548 29.3368 196.801 35.3334 196.801 42.5984V77.4244H196.547C179.028 35.8408 147.277 9.96344 111.198 9.96344C68.2 9.96344 36.5878 49.8865 36.5878 104.709C36.5878 159.923 68.7092 198.831 112.98 198.831C140.357 198.831 164.68 180.08 164.68 160.707V136.998C164.68 126.803 160.584 118.639 153.155 114.303V114.049H208.442V114.303C201.013 118.639 196.917 126.803 196.917 136.998V165.066C196.917 172.977 191.548 181.649 173.752 192.096C154.937 203.19 132.674 209.187 110.273 209.187C47.3489 209.14 0 164.259 0 104.57ZM360.347 189.375C346.392 177.774 338.593 161.837 338.593 141.933V29.3369C338.593 19.1428 334.497 10.9783 327.069 6.64232V6.38862H382.355V6.64232C374.927 10.9783 370.83 19.1428 370.83 29.3369V137.09C370.83 154.434 376.199 168.087 386.058 178.028C397.328 189.375 414.338 196.017 435.443 196.271C474.739 196.663 500.195 173.692 500.195 140.157V29.3369C500.195 19.1428 496.099 10.9783 488.67 6.64232V6.38862H521.44V6.64232C514.011 10.9783 509.915 19.1428 509.915 29.3369V140.296C509.915 181.349 476.521 209.163 426.094 209.163C397.444 209.14 375.436 201.76 360.347 189.375ZM632.522 104.709C632.522 44.9047 680.241 0 743.72 0C769.431 0 792.088 7.14969 812.684 21.426C824.07 29.3368 829.323 35.3334 829.323 42.5984V77.4244H829.069C811.55 35.8408 779.799 9.96344 743.073 9.96344C700.722 9.96344 669.11 49.8865 669.11 104.709C669.11 159.3 700.722 199.085 744.345 199.085C779.545 199.085 812.8 173.323 834.438 130.609H834.692L829.948 166.819C829.046 173.715 824.07 179.965 812.684 187.853C792.088 202.129 769.431 209.14 743.72 209.14C679.478 208.887 632.522 164.259 632.522 104.709ZM944.872 104.709C944.872 44.9047 992.592 0 1056.07 0C1081.78 0 1104.44 7.14969 1125.03 21.426C1136.42 29.3368 1141.67 35.3334 1141.67 42.5984V77.4244H1141.42C1123.9 35.8408 1092.15 9.96344 1055.42 9.96344C1013.07 9.96344 981.46 49.8865 981.46 104.709C981.46 159.3 1013.07 199.085 1056.7 199.085C1091.89 199.085 1125.15 173.323 1146.79 130.609H1147.04L1142.3 166.819C1141.4 173.715 1136.42 179.965 1125.01 187.853C1104.41 202.129 1081.76 209.14 1056.05 209.14C991.851 208.887 944.872 164.259 944.872 104.709ZM1268.24 179.827V29.3369C1268.24 19.1428 1264.14 10.9783 1256.71 6.64232V6.38862H1312V6.64232C1304.57 10.9783 1300.48 19.1428 1300.48 29.3369V179.827C1300.48 190.021 1304.57 198.185 1312 202.521V202.775H1256.71V202.521C1264.14 198.185 1268.24 190.021 1268.24 179.827Z" />
-                </svg>
+                <img src="Gucci-clone/Sokka-Logo.webp" alt="">
             </div>
 
 
+            <span class="main-header-manu"><i class="fa-solid fa-bars"></i></span>
+
+            <!-- Navigation -->
+            <nav class="main-nav">
+                <a href="index.html" >template1</a>
+                <a href="index1.html">template2</a>
+                <a href="template.html">template3</a>
+                <a href="gucci.html" class="active">SokkaTableWare</a>
+                <a href="#">Careers</a>
+            </nav>
+
+            <!-- Header Icons -->
             <div class="menu-icon">
-                <svg viewBox="0 0 24 24" width="24" height="24">
+                <svg class="manu-bar" viewBox="0 0 24 24" width="24" height="24">
                     <path d="M4 6h16v1.5H4V6zm0 5.25h16v1.5H4v-1.5zm0 5.25h16V18H4v-1.5z" />
                 </svg>
                 <svg viewBox="0 0 24 24">
@@ -40,17 +52,122 @@
                         d="M20 12C20 7.58 16.42 4 12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20C13.94 20 15.72 19.31 17.1 18.16L18.94 20L20 18.94L18.16 17.1C19.31 15.72 20 13.94 20 12ZM12 18.5C8.42 18.5 5.5 15.58 5.5 12C5.5 8.42 8.42 5.5 12 5.5C15.58 5.5 18.5 8.42 18.5 12C18.5 15.58 15.58 18.5 12 18.5Z" />
                 </svg>
             </div>
+
+            <div class="arrowSection">
+                <div class="arrowContainer slideDownDiv">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1 class="hero-title">New In</h1>
-            <div class="hero-btn-group">
-                <button class="btn-white">FOR HER</button>
-                <button class="btn-white">FOR HIM</button>
+
+    <section class="sokka-sample-section">
+
+        <div class="sokka-title-group">
+            <h2>SAMPLE AVAILABLE!</h2>
+            <h1>Contact Us</h1>
+            <p class="sokka-desc">
+                There are different material dinnerware for your hotels and restaurants' selection.<br>
+                Include white porcelain, color porcelain, bone china dinnerware.
+            </p>
+        </div>
+
+        <div class="sokka-icon-row">
+            <div class="icon-item">
+                <img src="https://placehold.co/100x100/8d6e63/ffffff?text=Plate" alt="Dinner Plate">
+                <span>Dinner Plate</span>
+            </div>
+
+            <div class="icon-item">
+                <img src="https://placehold.co/100x100/8d6e63/ffffff?text=Square" alt="Square Plate">
+                <span>Square Plate</span>
+            </div>
+
+            <div class="icon-item">
+                <img src="https://placehold.co/100x100/8d6e63/ffffff?text=Round" alt="Round Plate">
+                <span>Round Plate</span>
+            </div>
+
+            <div class="icon-item">
+                <img src="https://placehold.co/100x100/8d6e63/ffffff?text=Bowl" alt="Bowl">
+                <span>Bowl</span>
+            </div>
+
+            <div class="icon-item">
+                <img src="https://placehold.co/100x100/8d6e63/ffffff?text=Cup" alt="Coffee Cup">
+                <span>Coffee Cup</span>
+            </div>
+
+            <div class="icon-item">
+                <img src="https://placehold.co/100x100/8d6e63/ffffff?text=Boat" alt="Gravy Boat">
+                <span>Gravy Boat</span>
             </div>
         </div>
+
+        <div class="sokka-collections">
+
+            <div class="collection-banner"
+                style="background-image: url('https://sokkatableware.com/wp-content/uploads/al_opt_content/IMAGE/sokkatableware.com/wp-content/uploads/2025/04/IDENTITY-1-1.jpg.bv.webp?bv_host=sokkatableware.com');">
+                <h3>Aurora</h3>
+            </div>
+
+            <div class="collection-banner"
+                style="background-image: url('https://sokkatableware.com/wp-content/uploads/al_opt_content/IMAGE/sokkatableware.com/wp-content/uploads/2024/06/Safari-1.webp.bv.webp?bv_host=sokkatableware.com');">
+                <h3>Fantasy - Purple</h3>
+            </div>
+            <div class="collection-banner"
+                style="background-image: url('https://sokkatableware.com/wp-content/uploads/al_opt_content/IMAGE/sokkatableware.com/wp-content/uploads/2024/06/Evil_eye_collection.webp.bv.webp?bv_host=sokkatableware.com');">
+                <h3>Bloom</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="discovery-section">
+        <h2 class="discovery-title">DISCOVERY</h2>
+
+        <!-- Swiper -->
+        <div class="discovery-section-slider swiper">
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="discovery-image-container">
+                        <img src="https://sokkatableware.com/wp-content/uploads/al_opt_content/IMAGE/sokkatableware.com/wp-content/uploads/2024/06/Safari_All_prosducts_Banner.webp.bv.webp?bv_host=sokkatableware.com"
+                            alt="Color Porcelain Dinnerware Table Setting" />
+                    </div>
+
+                    <h3 class="product-title">Color Porcelain Dinnerware</h3>
+                    <a href="https://sokkatableware.com" class="read-more-link">
+                        Read More >>
+                    </a>
+                </div>
+
+                <!-- Slide 2 (example duplicate – replace image/text later) -->
+                <div class="swiper-slide">
+                    <div class="discovery-image-container">
+                        <img src="https://sokkatableware.com/wp-content/uploads/2024/06/Safari_All_prosducts_Banner.webp"
+                            alt="Dinnerware Collection" />
+                    </div>
+
+                    <h3 class="product-title">Premium Tableware</h3>
+                    <a href="https://sokkatableware.com" class="read-more-link">
+                        Read More >>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DOTS OUTSIDE (as you wanted) -->
+        <div class="slider-dots swiper-pagination"></div>
     </section>
 
 
@@ -60,7 +177,7 @@
         <div class="grid-container">
             <div class="product-item">
                 <div class="product-img-box">
-                    <img src="https://media.gucci.com/dynamic/b3c8/PrIhsw1Exd4RuNbqFX3hCxjKtLyQKji4MYIgI++QIlJzLagfvNupIhfoqO2j5SgWBVlumDi90Y8EQ6OWqXeKKbhgQ0q_IXwI8IKBWVtvKYQ1hMN+Evw7OgTL3ktDef52ziC99FX58qOVgCB7hXRdjo28zZN_rKbwpEt3HjAUR7zwmcS1btXCuHS5pqKE_2wVJ8Aa5n1WPclxd3m8Y4LRydk83DMw2G2fbWS2qAW9Ox7t3R1f9v13tCx0a8bs7fftW0mbWex0L1oGau6c0W2kL78RqlwwQoUNsZ1RvY4XdaQcd2fuCHIVTNPMFkuh4JzNjwHohO3ANarx62mYnKOKAw==/HP_Portrait_Gucci-GIFT-GIVING-NOV25-Set-1-02-0239-D_001_Default.png"
+                    <img src="https://sokkatableware.com/wp-content/uploads/2024/05/DinnerPlate-2-1-300x300.jpg"
                         alt="Wallets">
                 </div>
                 <div class="product-name uppercase">Women's Small Leather<br>Goods</div>
@@ -68,7 +185,7 @@
 
             <div class="product-item">
                 <div class="product-img-box">
-                    <img src="https://media.gucci.com/dynamic/b3c8/jZbW42HAWnnQ3yRXX9IwssfBwdQZrcp2TrSadMLF0jxV12kgPhEa8nPxHnqcf3tY4dVlY9YBborR78dEf32UTEeZ24G4s9kVUXfhkwz0wTcxDP0IkEKA2lA+JNTqkqFIG7dYNbmRbZLXGEhCNbQImYdtKhp88kNAFVFPUomjx6SpxevvnKfU8UI9OekHhRkklla3FNv6ePY0gJkO5eeToxt82JOYSyGcCqBj3oagVqISFjlPIYJ9kfT5R3Qg1oAfdXTFYSin7UC6hWZj0si888+Q7CtuXDZktwzdkZS2l3i4rXEmp4d15F6poHB5czjMsc3X8eXQa+maelcaGTNoSg==/HP_Portrait_Gucci-GIFT-GIVING-NOV25-11B-BBY-GUC-14-0905_001_Default.png"
+                    <img src="https://sokkatableware.com/wp-content/uploads/2024/05/ServingBowl-2-1-300x300.jpg"
                         alt="Sneakers">
                 </div>
                 <div class="product-name uppercase">Women's Shoes</div>
@@ -76,7 +193,7 @@
 
             <div class="product-item">
                 <div class="product-img-box">
-                    <img src="https://media.gucci.com/dynamic/b3c8/gRswdrKSj1YPIgQkAw9LWkJTqYLbCme_IFPi1cNSExk8R+et+rHDmb0G5Kx1Rr+r2lZrD8cZcsyHOVmE4tDynJsN_3eLC7KbCDnqRgQWYBw5ldocLq1o_EdPptamYEpv73AdbIF9XLjd+fTPn0oZ0277DvIPt3Js6p13PZ4S3v3MWq6oC98sl4NdufIxmFM2ujUxCEd5d+ZS8qPRk8GGk6gUZpzdgaJ0Rwx9M34HYLcJw7NUqhWuY1ktqqJglOxR3I5d81kQJSeOcIEeUAj_YHK4GE6BCpXL3ScazktxNoznjiGwAy691eQAm4vJcrEyPIUJPY0l_VumrqrdJem+Gw==/HP_Portrait_Gucci-GIFT-GIVING-NOV25-Set-2-13-0364-E_001_Default.png"
+                    <img src="https://sokkatableware.com/wp-content/uploads/2024/05/OVALDIPPLATTER-1-1-300x300.jpg"
                         alt="Loafers">
                 </div>
                 <div class="product-name uppercase">Men's Shoes</div>
@@ -84,13 +201,49 @@
 
             <div class="product-item">
                 <div class="product-img-box">
-                    <img src="https://media.gucci.com/dynamic/b3c8/NQNEXdqufzBQWplDaAW1dx15_gsPwqLx0vaGLk6tsBEU25OEVwgBxKNn2n0VhHWNE5gIhS9a5kw6JQ6aBho1xAmkp1q9jGbVK7yFOWmkUb+YPve5dhGjKEvD8FQ82QH_SxOgYWyXrjGqOsJVumyD1sR243wLJ3skpl4RxErPLA_BpTx3lBgSzCMKNULsxOLG88o+Qo6aiYywwNegto_jx8k6N15XKKh4cwmuJnlmmrGlgsLIasGdRVI+2A8Jeo1tCNOmzMmPIKyWYat+hdyFJyOn2WfTJ70ubmlHqm5dWvc8m2mMhzXeosqG8VEnI9ax/HP_Portrait_Gucci-GIFT-GIVING-NOV25-22-2112_001_Default.png"
+                    <img src="http://sokkatableware.com/wp-content/uploads/2024/05/Napkin-2-1-300x300.jpg"
                         alt="Stack of Wallets">
                 </div>
                 <div class="product-name uppercase">Men's Small Leather<br>Goods</div>
             </div>
         </div>
     </section>
+
+
+    <section class="founder-section">
+
+        <h2 class="founder-header">
+            MEET OUR<br>FOUNDER
+        </h2>
+
+        <div class="video-container">
+            <video autoplay muted loop playsinline
+                poster="https://sokkatableware.com/wp-content/uploads/2024/06/afcfec85ec084c6c95e66e8d184994a8-1-1-1.mp4">
+
+                <source
+                    src="https://sokkatableware.com/wp-content/uploads/2024/06/afcfec85ec084c6c95e66e8d184994a8-1-1-1.mp4"
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </div>
+
+        <h3 class="founder-headline">"A Wanderer of the World"</h3>
+
+        <p class="founder-bio">
+            A wanderer of the world and curious by nature, Sravanya Pittie combines her talent for design along with her
+            love for art to create magnificent homes and inspired tablescapes.
+        </p>
+
+        <p class="founder-quote">
+            “Dining is both a visual and gustatory experience and when I was designing the Sokka Tableware collection, I
+            decided to take inspiration from my roots in India and my travels abroad.”
+        </p>
+
+        <a href="#" class="shop-btn">Shop Now</a>
+
+    </section>
+
 
     <section class="showcase-section">
         <img src="https://media.gucci.com/dynamic/b3c8/eUdYtFcGv4Nt3zJAjxFjS6pFoI92knXRTB7aRRrwE5E09dRc726mBxHaoasKZxYngPUMUuUA2mUOPGmD6lIQFJ8G1ZvW_3ngumn9n+9ReZNdUUz9l2R1OLChxN4ZJRxR98WoOiA4ha+Mpm8MVi89iaqGpe7TUz1ZNoKHumeKvVbWwBR+Fl9EOPaHpVUS6HGLFRJtwckI44_o+vW8wNX+UO3CY+JG3BB_2D7DO1MyUyicC7o0Wvu1kZmWdbIx++dmo82WbVQN+pVqildpYuo0dNfrPeYJm54lBpJNqTrw8pexEa+OrihKpsQCK9+FoDb0yCKHHCrfvPhTScQ9BX7oSw==/HP_Portrait-XL_Gucci-GIFT-GIVING-NOV25-Set-1-05-0637-C_001_Default.png"
@@ -101,8 +254,8 @@
         </div>
     </section>
 
-    <section class="services-section">
-        <h2 class="section-heading text-center uppercase">GUCCI SERVICES</h2>
+    <!-- <section class="services-section">
+        <h2 class="section-heading text-center uppercase">SokkaTableWare SERVICES</h2>
 
         <div class="service-card">
             <div class="service-img-wrapper">
@@ -111,15 +264,16 @@
             </div>
             <div class="service-text-content">
                 <h3 class="service-title">Collect In Store</h3>
-                <p class="service-desc">Order your gifts online and collect them<br>from your preferred Gucci boutique.
+                <p class="service-desc">Order your gifts online and collect them<br>from your preferred SokkaTableWare
+                    boutique.
                 </p>
                 <a href="#" class="service-link">Discover More</a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <footer>
-        <h3 class="newsletter-title">SIGN UP FOR GUCCI UPDATES</h3>
+        <h3 class="newsletter-title">SIGN UP FOR SokkaTableWare UPDATES</h3>
         <p class="newsletter-desc">Get exclusive updates on the collection's launch, personalized communication and the
             House's latest news.</p>
 
@@ -133,7 +287,7 @@
             <div class="accordion-item">Country/Region, City <span>›</span></div>
             <div class="accordion-item">May We Help You? <span>›</span></div>
             <div class="accordion-item">The Company <span>›</span></div>
-            <div class="accordion-item">Gucci Services <span>›</span></div>
+            <div class="accordion-item">SokkaTableWare Services <span>›</span></div>
         </div>
 
         <div class="footer-bottom-logo">
@@ -144,19 +298,15 @@
                 <div class="social-icon">ig</div>
             </div>
             <div class="copyright">
-                © 2016 - 2025 Guccio Gucci S.p.A. - All rights reserved.<br>
+                © 2016 - 2025 SokkaTableWare. - All rights reserved.<br>
                 SIAE LICENCE # 2294/I/1936 and 5647/I/1936
             </div>
-            <svg viewBox="0 0 1312 210">
-                <path
-                    d="M0 104.57C0 44.8817 47.7192 0 111.198 0C137.048 0 159.565 7.14969 180.162 21.426C191.548 29.3368 196.801 35.3334 196.801 42.5984V77.4244H196.547C179.028 35.8408 147.277 9.96344 111.198 9.96344C68.2 9.96344 36.5878 49.8865 36.5878 104.709C36.5878 159.923 68.7092 198.831 112.98 198.831C140.357 198.831 164.68 180.08 164.68 160.707V136.998C164.68 126.803 160.584 118.639 153.155 114.303V114.049H208.442V114.303C201.013 118.639 196.917 126.803 196.917 136.998V165.066C196.917 172.977 191.548 181.649 173.752 192.096C154.937 203.19 132.674 209.187 110.273 209.187C47.3489 209.14 0 164.259 0 104.57ZM360.347 189.375C346.392 177.774 338.593 161.837 338.593 141.933V29.3369C338.593 19.1428 334.497 10.9783 327.069 6.64232V6.38862H382.355V6.64232C374.927 10.9783 370.83 19.1428 370.83 29.3369V137.09C370.83 154.434 376.199 168.087 386.058 178.028C397.328 189.375 414.338 196.017 435.443 196.271C474.739 196.663 500.195 173.692 500.195 140.157V29.3369C500.195 19.1428 496.099 10.9783 488.67 6.64232V6.38862H521.44V6.64232C514.011 10.9783 509.915 19.1428 509.915 29.3369V140.296C509.915 181.349 476.521 209.163 426.094 209.163C397.444 209.14 375.436 201.76 360.347 189.375ZM632.522 104.709C632.522 44.9047 680.241 0 743.72 0C769.431 0 792.088 7.14969 812.684 21.426C824.07 29.3368 829.323 35.3334 829.323 42.5984V77.4244H829.069C811.55 35.8408 779.799 9.96344 743.073 9.96344C700.722 9.96344 669.11 49.8865 669.11 104.709C669.11 159.3 700.722 199.085 744.345 199.085C779.545 199.085 812.8 173.323 834.438 130.609H834.692L829.948 166.819C829.046 173.715 824.07 179.965 812.684 187.853C792.088 202.129 769.431 209.14 743.72 209.14C679.478 208.887 632.522 164.259 632.522 104.709ZM944.872 104.709C944.872 44.9047 992.592 0 1056.07 0C1081.78 0 1104.44 7.14969 1125.03 21.426C1136.42 29.3368 1141.67 35.3334 1141.67 42.5984V77.4244H1141.42C1123.9 35.8408 1092.15 9.96344 1055.42 9.96344C1013.07 9.96344 981.46 49.8865 981.46 104.709C981.46 159.3 1013.07 199.085 1056.7 199.085C1091.89 199.085 1125.15 173.323 1146.79 130.609H1147.04L1142.3 166.819C1141.4 173.715 1136.42 179.965 1125.01 187.853C1104.41 202.129 1081.76 209.14 1056.05 209.14C991.851 208.887 944.872 164.259 944.872 104.709ZM1268.24 179.827V29.3369C1268.24 19.1428 1264.14 10.9783 1256.71 6.64232V6.38862H1312V6.64232C1304.57 10.9783 1300.48 19.1428 1300.48 29.3369V179.827C1300.48 190.021 1304.57 198.185 1312 202.521V202.775H1256.71V202.521C1264.14 198.185 1268.24 190.021 1268.24 179.827Z"
-                    fill="white"></path>
-            </svg>
+            <img src="Gucci-clone/Sokka-Logo.webp" alt="">
         </div>
     </footer>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
 
         const header = document.getElementById("main-header");
@@ -171,6 +321,35 @@
             }
         });
     </script>
+    <script>
+        const menuBar = document.querySelector(".manu-bar");
+        const mainNav = document.querySelector(".main-nav");
+
+        menuBar.addEventListener("click", () => {
+            mainNav.classList.toggle("active");
+            menuBar.classList.toggle("active");
+        });
+    </script>
+
+
+    <!-- sider -->
+    <script>
+        const discoverySwiper = new Swiper(".discovery-section-slider", {
+            loop: true,
+            speed: 800,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".slider-dots",
+                clickable: true,
+            },
+            touchEventsTarget: "container",
+        });
+    </script>
+
 </body>
 
 </html>
