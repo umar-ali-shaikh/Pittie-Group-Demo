@@ -639,12 +639,6 @@ footer {
     font-size: 10px;
 }
 
-
-
-Based on the "MEET OUR FOUNDER" image you provided,
-here is the HTML and CSS to replicate that exact section. I have transcribed the text from the image so you don't have to type it out.
-
-HTML Code Copy this into your HTML file. HTML < !DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Meet Our Founder</title><style>
 /* IMPORT FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@400;600;700&display=swap');
 

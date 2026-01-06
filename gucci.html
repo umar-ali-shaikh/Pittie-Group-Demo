@@ -2,38 +2,28 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- font awesome -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- swipper -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SokkaTableWare Mobile View</title>
+    <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="pittie-home-assests/style.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="Gucci-clone/style.css">
 </head>
 
-<body class="snap-container">
+<body>
 
+    <div class="top-banner uppercase">
+        Complimentary Shipping & Returns
+    </div>
 
-    <!-- ================= Header ================= -->
     <header class="main-header">
         <div class="container header-inner">
             <!-- Logo -->
-            <div class="logo">
-                <img src="assets/homepage/cropped-Group-1.png" alt="Pittie Group" />
+
+
+            <div class="logo-container">
+                <img src="Gucci-clone/Sokka-Logo.webp" alt="">
             </div>
 
 
@@ -41,19 +31,26 @@
 
             <!-- Navigation -->
             <nav class="main-nav">
-                <a href="index.html" class="active">template1</a>
+                <a href="index.html">template1</a>
                 <a href="index1.html">template2</a>
                 <a href="template.html">template3</a>
-                <a href="gucci.html">SokkaTableWare</a>
+                <a href="gucci.html" class="active">SokkaTableWare</a>
                 <a href="#">Careers</a>
             </nav>
 
             <!-- Header Icons -->
-            <div class="header-icons">
-                <span>🌐</span>
-                <span>✉️</span>
-                <span>🔍</span>
-                <span class="mode">🌙</span>
+            <div class="menu-icon">
+                <svg class="manu-bar" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M4 6h16v1.5H4V6zm0 5.25h16v1.5H4v-1.5zm0 5.25h16V18H4v-1.5z" />
+                </svg>
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M18.0002 7H15.7502V5.75C15.7502 4.79 14.9702 4 14.0002 4H9.99023C9.03023 4 8.24023 4.78 8.24023 5.75V7H5.99023C4.89023 7 3.99023 7.89 3.99023 9V18C3.99023 19.1 4.88023 20 5.99023 20H17.9902C19.0902 20 19.9902 19.11 19.9902 18V9C19.9902 7.9 19.1002 7 17.9902 7H18.0002ZM9.75023 5.75C9.75023 5.61 9.86023 5.5 10.0002 5.5H14.0102C14.1502 5.5 14.2602 5.61 14.2602 5.75V7H9.76023V5.75H9.75023ZM18.5002 18.01C18.5002 18.28 18.2802 18.51 18.0002 18.51H6.00023C5.73023 18.51 5.50023 18.29 5.50023 18.01V9.01C5.50023 8.74 5.72023 8.51 6.00023 8.51H8.25023V10.01H9.75023V8.51H14.2502V10.01H15.7502V8.51H18.0002C18.2702 8.51 18.5002 8.73 18.5002 9.01V18.01Z" />
+                </svg>
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M20 12C20 7.58 16.42 4 12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20C13.94 20 15.72 19.31 17.1 18.16L18.94 20L20 18.94L18.16 17.1C19.31 15.72 20 13.94 20 12ZM12 18.5C8.42 18.5 5.5 15.58 5.5 12C5.5 8.42 8.42 5.5 12 5.5C15.58 5.5 18.5 8.42 18.5 12C18.5 15.58 15.58 18.5 12 18.5Z" />
+                </svg>
             </div>
 
             <div class="arrowSection">
@@ -68,824 +65,273 @@
     </header>
 
 
-    <!-- ================= Hero Slider ================= -->
-    <section class="hero-slider smooth-section" id="hero-section">
-        <div class="swiper heroSwiper">
+    <section class="sokka-sample-section">
+
+        <div class="sokka-title-group">
+            <h2>SAMPLE AVAILABLE!</h2>
+            <h1>Contact Us</h1>
+            <p class="sokka-desc">
+                There are different material dinnerware for your hotels and restaurants' selection.<br>
+                Include white porcelain, color porcelain, bone china dinnerware.
+            </p>
+        </div>
+
+        <div class="sokka-icon-row">
+            <div class="icon-item">
+                <img src="https://placehold.co/100x100/8d6e63/ffffff?text=Plate" alt="Dinner Plate">
+                <span>Dinner Plate</span>
+            </div>
+
+            <div class="icon-item">
+                <img src="https://placehold.co/100x100/8d6e63/ffffff?text=Square" alt="Square Plate">
+                <span>Square Plate</span>
+            </div>
+
+            <div class="icon-item">
+                <img src="https://placehold.co/100x100/8d6e63/ffffff?text=Round" alt="Round Plate">
+                <span>Round Plate</span>
+            </div>
+
+            <div class="icon-item">
+                <img src="https://placehold.co/100x100/8d6e63/ffffff?text=Bowl" alt="Bowl">
+                <span>Bowl</span>
+            </div>
+
+            <div class="icon-item">
+                <img src="https://placehold.co/100x100/8d6e63/ffffff?text=Cup" alt="Coffee Cup">
+                <span>Coffee Cup</span>
+            </div>
+
+            <div class="icon-item">
+                <img src="https://placehold.co/100x100/8d6e63/ffffff?text=Boat" alt="Gravy Boat">
+                <span>Gravy Boat</span>
+            </div>
+        </div>
+
+        <div class="sokka-collections">
+
+            <div class="collection-banner"
+                style="background-image: url('https://sokkatableware.com/wp-content/uploads/al_opt_content/IMAGE/sokkatableware.com/wp-content/uploads/2025/04/IDENTITY-1-1.jpg.bv.webp?bv_host=sokkatableware.com');">
+                <h3>Aurora</h3>
+            </div>
+
+            <div class="collection-banner"
+                style="background-image: url('https://sokkatableware.com/wp-content/uploads/al_opt_content/IMAGE/sokkatableware.com/wp-content/uploads/2024/06/Safari-1.webp.bv.webp?bv_host=sokkatableware.com');">
+                <h3>Fantasy - Purple</h3>
+            </div>
+            <div class="collection-banner"
+                style="background-image: url('https://sokkatableware.com/wp-content/uploads/al_opt_content/IMAGE/sokkatableware.com/wp-content/uploads/2024/06/Evil_eye_collection.webp.bv.webp?bv_host=sokkatableware.com');">
+                <h3>Bloom</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="discovery-section">
+        <h2 class="discovery-title">DISCOVERY</h2>
+
+        <!-- Swiper -->
+        <div class="discovery-section-slider swiper">
             <div class="swiper-wrapper">
+
                 <!-- Slide 1 -->
-                <div class="swiper-slide slide swiper-slide-active"
-                    style="background-image: url('./pittie-home-assests/hero-section-img.jpg')">
-                    <div class="overlay"></div>
-                    <div class="hero-content-wrapper">
-                        <div class="hero-content">
-                            <span class="tag">EPICS Stories</span>
-                            <h1>Stories That Travel
-                            </h1>
-                            <p>
-                                They travel across cultures, continents, and formats from films and series to shorts,
-                                audio, and
-                                digital-native verticals.
-                            </p>
-                            <a class="btn">Read story →</a>
-                        </div>
+                <div class="swiper-slide">
+                    <div class="discovery-image-container">
+                        <img src="https://sokkatableware.com/wp-content/uploads/al_opt_content/IMAGE/sokkatableware.com/wp-content/uploads/2024/06/Safari_All_prosducts_Banner.webp.bv.webp?bv_host=sokkatableware.com"
+                            alt="Color Porcelain Dinnerware Table Setting" />
                     </div>
+
+                    <h3 class="product-title">Color Porcelain Dinnerware</h3>
+                    <a href="https://sokkatableware.com" class="read-more-link">
+                        Read More >>
+                    </a>
                 </div>
 
-                <!-- Slide 2 -->
-                <div class="swiper-slide slide" style="
-              background-image: url('../assets/homepage/Mix Pitties_1 copy.jpg');
-            ">
-                    <div class="overlay"></div>
-                    <div class="hero-content-wrapper">
-                        <div class="hero-content">
-                            <span class="tag">Pittie Consumer</span>
-                            <h1>Driving Tomorrow</h1>
-                            <p>
-                                Building future-ready businesses with Consumers Products
-                            </p>
-                            <a class="btn">Explore →</a>
-                        </div>
+                <!-- Slide 2 (example duplicate – replace image/text later) -->
+                <div class="swiper-slide">
+                    <div class="discovery-image-container">
+                        <img src="https://sokkatableware.com/wp-content/uploads/2024/06/Safari_All_prosducts_Banner.webp"
+                            alt="Dinnerware Collection" />
                     </div>
+
+                    <h3 class="product-title">Premium Tableware</h3>
+                    <a href="https://sokkatableware.com" class="read-more-link">
+                        Read More >>
+                    </a>
                 </div>
 
-                <!-- Slide 3 -->
-                <div class="swiper-slide slide" style="
-              background-image: url('../assets/homepage/Home-page-banner.png');
-            ">
-                    <div class="overlay"></div>
-                    <div class="hero-content-wrapper">
-                        <div class="hero-content">
-                            <span class="tag">Realty</span>
-                            <h1>Purposeful Growth</h1>
-                            <p>Creating long-term value for communities and the planet</p>
-                            <a class="btn">Learn more →</a>
-                        </div>
-                    </div>
-                </div>
+            </div>
+        </div>
 
-                <!-- Slide 4 -->
-                <div class="swiper-slide slide" style="
-              background-image: url('../assets/homepage/drone-warehouse.png');
-            ">
-                    <div class="overlay"></div>
-                    <div class="hero-content-wrapper">
-                        <div class="hero-content">
-                            <span class="tag">
-                                Logistics
-                            </span>
-                            <h1>Think Logistics. Think Pittie.
-                            </h1>
-                            <p>End-to-end logistics solutions built on performance, precision, and trust.</p>
-                            <a class="btn">Learn more →</a>
-                        </div>
-                    </div>
+        <!-- DOTS OUTSIDE (as you wanted) -->
+        <div class="slider-dots swiper-pagination"></div>
+    </section>
+
+
+    <section class="curated-section">
+        <h2 class="section-heading text-center uppercase">Essentials by the House</h2>
+
+        <div class="grid-container">
+            <div class="product-item">
+                <div class="product-img-box">
+                    <img src="https://sokkatableware.com/wp-content/uploads/2024/05/DinnerPlate-2-1-300x300.jpg"
+                        alt="Wallets">
                 </div>
+                <div class="product-name uppercase">Signature Plates</div>
             </div>
 
-            <!-- Pagination / Controls -->
-            <div class="pagination">
-                <span id="count">1 / 4</span>
-                <div class="hero-slider-dots">
-                    <span class="active"></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <div class="product-item">
+                <div class="product-img-box">
+                    <img src="https://sokkatableware.com/wp-content/uploads/2024/05/ServingBowl-2-1-300x300.jpg"
+                        alt="Sneakers">
                 </div>
-                <div class="nav-btns">
-                    <button class="swiper-button-prevs">‹ Prev</button>
-                    <span>
-                        <i class="fa-solid fa-pause active"></i>
-                        <i class="fa-solid fa-play"></i>
-                    </span>
-                    <button class="swiper-button-nexts">Next ›</button>
+                <div class="product-name uppercase">Artisan Bowls</div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-img-box">
+                    <img src="https://sokkatableware.com/wp-content/uploads/2024/05/OVALDIPPLATTER-1-1-300x300.jpg"
+                        alt="Loafers">
                 </div>
+                <div class="product-name uppercase">Statement Platters</div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-img-box">
+                    <img src="http://sokkatableware.com/wp-content/uploads/2024/05/Napkin-2-1-300x300.jpg"
+                        alt="Stack of Wallets">
+                </div>
+                <div class="product-name uppercase">Essential Serveware</div>
             </div>
         </div>
     </section>
 
 
-    <section class="snap-section section services-section bg-color-blue">
-        <div class="container">
-            <!-- Services Heading -->
-            <div class="row flex-column align-items-center text-center">
-                <span class="badge mb-3">Our Services</span>
-                <h2>Power Logistics Across Business</h2>
-            </div>
+    <section class="founder-section">
 
-            <!-- Services Types -->
-            <div class="row services-Types flex-wrap pt-5">
-                <!-- Service 1 -->
-                <div class="Services-box mb-4">
-                    <div class="Services-box-item col-5">
-                        <img src="pittie-home-assests/image1.jpg" alt="Freight Forwarding">
-                        <div class="services-content">
-                            <span class="sub-heading">Realty</span>
-                            <h3>Carry &amp; Forward (C&amp;F) Partners</h3>
-                            <p>
-                                Pittie Logistics operates as a reliable Carry &amp; Forward
-                                partner, managing inventory, warehousing, dispatch, and
-                                secondary distribution with accuracy and efficiency.
-                            </p>
-                        </div>
-                        <div class="Services-box-right-arrow">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                        </div>
-                    </div>
-                    <div class="Services-box-item col-7 ms-4">
-                        <img src="pittie-home-assests/image2.jpg" alt="Customs Clearance">
-                        <div class="services-content">
-                            <span class="sub-heading">Consumer</span>
-                            <h3>Carry &amp; Forward (C&amp;F) Partners</h3>
-                            <p>
-                                Pittie Logistics operates as a reliable Carry &amp; Forward
-                                partner, managing inventory, warehousing, dispatch, and
-                                secondary distribution with accuracy and efficiency.
-                            </p>
-                        </div>
-                        <div class="Services-box-right-arrow">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                        </div>
-                    </div>
-                </div>
+        <h2 class="founder-header">
+            MEET OUR<br>FOUNDER
+        </h2>
 
-                <!-- Service 2 -->
-                <div class="Services-box">
-                    <div class="Services-box-item col-7 me-4">
-                        <img src="pittie-home-assests/image3.jpg" alt="Freight Forwarding">
-                        <div class="services-content">
-                            <span class="sub-heading">In 10 Media</span>
-                            <h3>Super Stockist Services</h3>
-                            <p>
-                                Pittie Logistics offers reliable Super Stockist solutions that
-                                ensure efficient bulk storage, inventory control, and timely
-                                distribution across territories.
-                            </p>
-                        </div>
-                        <div class="Services-box-right-arrow">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                        </div>
-                    </div>
-                    <div class="Services-box-item col-5">
-                        <img src="pittie-home-assests/image4.jpg" alt="Customs Clearance">
-                        <div class="services-content">
-                            <span class="sub-heading">Logistics</span>
-                            <h3>Super Stockist Services</h3>
-                            <p>
-                                Pittie Logistics offers reliable Super Stockist solutions that
-                                ensure efficient bulk storage, inventory control, and timely
-                                distribution across territories.
-                            </p>
-                        </div>
-                        <div class="Services-box-right-arrow">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                        </div>
-                    </div>
-                </div>
+        <div class="video-container">
+            <video autoplay muted loop playsinline
+                poster="https://sokkatableware.com/wp-content/uploads/2024/06/afcfec85ec084c6c95e66e8d184994a8-1-1-1.mp4">
 
-            </div>
+                <source
+                    src="https://sokkatableware.com/wp-content/uploads/2024/06/afcfec85ec084c6c95e66e8d184994a8-1-1-1.mp4"
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
         </div>
+
+        <h3 class="founder-headline">"A Wanderer of the World"</h3>
+
+        <p class="founder-bio">
+            A wanderer of the world and curious by nature, Sravanya Pittie combines her talent for design along with her
+            love for art to create magnificent homes and inspired tablescapes.
+        </p>
+
+        <p class="founder-quote">
+            “Dining is both a visual and gustatory experience and when I was designing the Sokka Tableware collection, I
+            decided to take inspiration from my roots in India and my travels abroad.”
+        </p>
+
+        <a href="#" class="shop-btn">Shop Now</a>
+
     </section>
 
 
-
-    <!-- What We Do -->
-    <section class="snap-section section what-we-do-section">
-        <div class="container">
-            <div class="row align-items-center gap-4">
-                <!-- LEFT CONTENT -->
-                <div class="col div-pm">
-                    <span class="badge mb-3">About Us</span>
-
-                    <h2 class="what-title mb-3">
-                        Smart Logistics Solutions That Move Your Business Forward
-                    </h2>
-
-                    <p class="what-desc mb-4">
-                        Established in the year 1989 by Mr. Krishna Kumar Pittie with real estate as its core business,
-                        Pittie Group has developed new ideas through diversity across business sectors. Entrepreneurship
-                        is an integral part of the Group which it exemplifies through start-up cultivation and strategic
-                        investments which would enable it to explore new avenues of business.
-                        <br>
-                        <br>Over the years, the Group
-                        has ventured into numerous businesses through its verticals namely: Realty, Consumer, Media and
-                        Logistics which have enabled further growth and established better synergies through a
-                        cross-functional integration across the Group.
-                    </p>
-                    <div class="whatwedo-rating">
-                        <div>
-                            <span>2+</span>
-                            <h4>Cities</h4>
-                        </div>
-                        <div>
-                            <span>7+</span>
-                            <h4>No. of Projects</h4>
-                        </div>
-                        <div>
-                            <span>10K</span>
-                            <h4>Units Delivered</h4>
-                        </div>
-                        <div>
-                            <span>2</span>
-                            <h4>Upcoming Projects</h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- RIGHT IMAGES -->
-                <div class="col div-pm">
-                    <div class="what-images-wrapper">
-                        <!-- ROW 1 : Full width image -->
-                        <div class="what-img what-img-row1">
-                            <img src="pittie-home-assests/what-image1.jpg" alt="" />
-                        </div>
-
-                        <!-- ROW 2 -->
-                        <div class="what-img-row2">
-                            <!-- Column 1 -->
-                            <div class="what-img what-img-col1">
-                                <img src="pittie-home-assests/what-image2.jpg" alt="" />
-                            </div>
-
-                            <!-- Column 2 -->
-                            <div class="what-img-col2 col">
-                                <div class="what-img">
-                                    <img src="pittie-home-assests/what-image3.png" alt="" />
-                                </div>
-                                <div class="what-img">
-                                    <img src="pittie-home-assests/what-image4.png" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="showcase-section">
+        <img src="https://sokkatableware.com/wp-content/uploads/al_opt_content/IMAGE/sokkatableware.com/wp-content/uploads/2024/06/Mexican_All_prosducts_Banner.webp.bv.webp?bv_host=sokkatableware.com"
+            alt="Jewelry" class="showcase-img">
+        <div class="showcase-overlay">
+            <h2 class="showcase-title">The Mexican Collection</h2>
+            <button class="btn-outline">SHOP NOW</button>
         </div>
     </section>
 
+    <footer>
+        <h3 class="newsletter-title">SIGN UP FOR SokkaTableWare UPDATES</h3>
+        <p class="newsletter-desc">Get exclusive updates on the collection's launch, personalized communication and the
+            House's latest news.</p>
 
-
-    <section class="leadership-section">
-        <div class="leadership-overlay"></div>
-
-        <div class="container leadership-container">
-
-            <h2 class="leadership-title">Our Leadership</h2>
-
-            <!-- TOP BLOCK -->
-            <div class="leader-block leader-top">
-                <div class="leader-image">
-                    <img src="pittie-home-assests/Krishna-pittie.png" alt="Krishna Kumar Pittie">
-                </div>
-
-                <div class="leader-content">
-                    <p class="leader-text">
-                        <span class="highlight">Mr. Krishna Kumar Pittie</span> (KK Pittie) is
-                        the founder and chairman of the Pittie Group. The foundation of his legacy has stemmed from
-                        various industries including textiles, finance, retail and silver, which began in the city of
-                        Jodhpur. After pursuing his bachelor’s degree from Jodhpur University, KK Pittie joined his
-                        family business.
-                        <br><br>
-                        His visionary approach, belief in his dreams and interest to venture into real
-                        estate business brought him to Mumbai in 1982. In 1989, he founded Pittie Group which enormously
-                        grew from 4 to 400 employees with a business diversification across Realty, FMCG, Media and
-                        Logistics. Rest was history. Apart from taking his real estate business to great heights of
-                        success, he is a mentor to all Group verticals.
-                    </p>
-
-                    <p class="leader-name">
-                        Mr. Krishna Kumar Pittie<br>
-                        <span>Founder & Chairman, Pittie Group</span>
-                    </p>
-                </div>
-
-            </div>
-
-            <!-- BOTTOM BLOCK -->
-            <div class="leader-block leader-bottom">
-
-                <div class="leader-content quote-box">
-                    <p class="quote">
-                        Opportunities Don’t Happen. You Create Them.
-                    </p>
-
-                    <p class="leader-text">
-                        With belief in this adage,<span class="highlight"> Mr. Aditya </span>, an alumnus of King’s
-                        College, London, took the reins of
-                        <span class="highlight"> Pittie Group </span> in his hands as a Managing Director in 2005 after
-                        completing his degree in
-                        management and leadership. Right from the beginning of his career, Aditya has been an emissary
-                        of entrepreneurship and advocated development of new ideas through business diversification.
-                        <br><br>
-                        His disciplinary approach and performance-driven mindset has been instrumental in structuring
-                        the business into four verticals: Realty, FMCG, Media, Logistics with a vision to drive growth
-                        and be a catalyst in amplifying synergies across the group. Driven by excellence and innovation,
-                        Aditya is constantly exploring different avenues of progress via a two-pronged approach – the
-                        first being start-up cultivation and other through strategic investments which would help the
-                        Group scale new heights of success and growth.
-                    </p>
-
-                    <p class="leader-name">
-                        Mr. Krishna Kumar Pittie<br>
-                        <span>Founder & Chairman, Pittie Group</span>
-                    </p>
-                </div>
-
-                <div class="leader-image">
-                    <img src="pittie-home-assests/Aditya-Pittie.jpg" alt="Aditya Pittie">
-                </div>
-
-            </div>
-
+        <div class="email-input-wrapper">
+            <input type="email" placeholder="Email" class="email-input">
+            <span class="arrow-icon">›</span>
         </div>
-    </section>
 
-
-    <section class="timeline-section">
-        <div class="container">
-
-            <h2 class="timeline-title">Our Timeline</h2>
-
-            <div class="timeline-track">
-
-                <!-- ITEM 1 (TOP) -->
-                <div class="timeline-node timeline-node-first">
-                    <span class="dot blue"></span>
-                    <span class="connector bottom"></span>
-
-                    <div class="timeline-content bottom">
-                        <div class="timeline-content-help">
-                            <span class="year">1989</span>
-                            <div class="timeline-content-inside">
-                                <h4>Laying The Foundation</h4>
-                                <p>Mr. KK Pittie founded the Group, laying the foundation for future growth.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-images">
-                            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
-                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-node">
-                    <div class="timeline-content top">
-                        <div class="timeline-content-help">
-                            <span class="year">1989</span>
-                            <div class="timeline-content-inside">
-                                <h4>Laying The Foundation</h4>
-                                <p>Mr. KK Pittie founded the Group, laying the foundation for future growth.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-images">
-                            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" />
-                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" />
-                        </div>
-                    </div>
-
-                    <span class="connector top"></span>
-                    <span class="dot red"></span>
-                </div>
-
-                <!-- ITEM 2 (BOTTOM) -->
-                <div class="timeline-node">
-                    <span class="dot blue"></span>
-                    <span class="connector bottom"></span>
-
-                    <div class="timeline-content bottom">
-                        <div class="timeline-content-help">
-                            <span class="year">1989</span>
-                            <div class="timeline-content-inside">
-                                <h4>Laying The Foundation</h4>
-                                <p>Mr. KK Pittie founded the Group, laying the foundation for future growth.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-images">
-                            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
-                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ITEM 3 (TOP) -->
-                <div class="timeline-node">
-                    <div class="timeline-content top">
-                        <div class="timeline-content-help">
-                            <span class="year">1989</span>
-                            <div class="timeline-content-inside">
-                                <h4>Laying The Foundation</h4>
-                                <p>Mr. KK Pittie founded the Group, laying the foundation for future growth.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-images">
-                            <img src="https://images.unsplash.com/photo-1556761175-129418cb2dfe" />
-                            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd" />
-                        </div>
-                    </div>
-
-                    <span class="connector top"></span>
-                    <span class="dot red"></span>
-                </div>
-
-                <!-- ITEM 4 (BOTTOM) -->
-                <div class="timeline-node">
-                    <span class="dot blue"></span>
-                    <span class="connector bottom"></span>
-
-                    <div class="timeline-content bottom">
-                        <div class="timeline-content-help">
-                            <span class="year">1989</span>
-                            <div class="timeline-content-inside">
-                                <h4>Laying The Foundation</h4>
-                                <p>Mr. KK Pittie founded the Group, laying the foundation for future growth.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-images">
-                            <img src="https://images.unsplash.com/photo-1581091215367-59ab6b6c8c0b" />
-                            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad" />
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ARROW -->
-                <div class="timeline-arrow">›</div>
-
-            </div>
+        <div class="footer-accordions">
+            <div class="accordion-item">STORE LOCATOR <span>›</span></div>
+            <div class="accordion-item">Country/Region, City <span>›</span></div>
+            <div class="accordion-item">May We Help You? <span>›</span></div>
+            <div class="accordion-item">The Company <span>›</span></div>
+            <div class="accordion-item">SokkaTableWare Services <span>›</span></div>
         </div>
-    </section>
 
-
-    <section class="eco-hero-section">
-
-        <div class="row flex-column align-items-center text-center">
-            <span class="badge mb-3">Impact & Responsibility</span>
-            <h2>Power Logistics Across Business</h2>
-        </div>
-        <div class="eco-hero">
-
-            <div class="eco-hero__wrapper">
-
-                <!-- TEXT -->
-                <div class="eco-hero__content">
-                    <div class="eco-hero__label">Eco Packaging</div>
-
-                    <h2 class="eco-hero__title">
-                        Purposeful Packaging, Designed For Sustainability
-                    </h2>
-
-                    <p class="eco-hero__desc">
-                        The company focuses on responsible and innovative packaging decisions to reduce
-                        environmental impact without sacrificing quality.
-                    </p>
-                </div>
-
-                <!-- CARDS -->
-                <div class="eco-hero__cards">
-
-                    <div class="eco-card eco-card--stat">
-                        <div class="eco-card__number">1000+</div>
-                        <p class="eco-card__text">
-                            Single use plastic eliminated in the world with our no single-use plastic scheme.
-                        </p>
-                    </div>
-
-                    <div class="eco-card eco-card--percentage">
-                        <div class="eco-card__icon">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                        <div class="eco-card__percent">60<span>%</span></div>
-                        <p class="eco-card__text">
-                            Of our packaging is made from recycled materials
-                        </p>
-                    </div>
-
-                    <div class="eco-card eco-card--list">
-                        <ul class="eco-card__list">
-                            <li>Elimination of all single-use plastics from packaging systems</li>
-                            <li>Full compliance with EPR (Extended Producer Responsibility) standards.</li>
-                        </ul>
-                    </div>
-
-                </div>
+        <div class="footer-bottom-logo">
+            <div class="social-icons">
+                <div class="social-icon">f</div>
+                <div class="social-icon">in</div>
+                <div class="social-icon">x</div>
+                <div class="social-icon">ig</div>
             </div>
-
-            <!-- SCROLL INDICATOR -->
-            <div class="eco-scroll">
-                <span class="eco-scroll__line"></span>
-                <span class="eco-scroll__line eco-scroll__line--active"></span>
-                <span class="eco-scroll__line"></span>
+            <div class="copyright">
+                © 2016 - 2025 SokkaTableWare. - All rights reserved.<br>
+                SIAE LICENCE # 2294/I/1936 and 5647/I/1936
             </div>
-
-        </div>
-    </section>
-
-
-    <!-- News and Blogs Section -->
-    <section>
-        <div class="container">
-            <div class="row">
-
-                <header class="section-header">
-                    <h6>News</h6>
-                    <h2>Lorem Ipsum Dolor Sit Amet</h2>
-                </header>
-
-                <!-- VIDEO SECTION (added below heading) -->
-                <div class="video-wrapper">
-                    <video class="news-video" src="pittie-home-assests/news_video.mp4" autoplay muted loop playsinline
-                        controls></video>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- <section>
-        <div class="container">
-            <div class="row">
-                <header class="section-header">
-                    <h6>News & Blogs</h6>
-                    <h2>Lorem Ipsum Dolor Sit Amet</h2>
-                </header>
-
-                <div class="news-grid">
-
-                    <div class="col-left">
-                        <div class="news-item">
-                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80"
-                                alt="News Image" class="img-landscape">
-                            <h3 class="article-title">Lorem ipsum dolor sit amet consectetur.</h3>
-                            <p class="article-excerpt">Lorem ipsum dolor sit amet consectetur. Eget faucibus habitasse
-                                faucibus
-                                a cursus congue amet in arcu.</p>
-                            <div class="meta-info">December 27, 2024 <span>|</span> In 10 media</div>
-                        </div>
-
-                        <div class="news-item">
-                            <img src="https://images.unsplash.com/photo-1544654803-b69140b285a1?auto=format&fit=crop&w=600&q=80"
-                                alt="Tablet Image" class="img-landscape">
-                            <h3 class="article-title">Lorem ipsum dolor sit amet consectetur.</h3>
-                            <p class="article-excerpt">Lorem ipsum dolor sit amet consectetur. Eget faucibus habitasse
-                                faucibus
-                                a cursus congue amet in arcu.</p>
-                            <div class="meta-info">December 27, 2024 <span>|</span> In 10 media</div>
-                        </div>
-                    </div>
-
-                    <div class="col-middle">
-                        <div class="news-item main-feature">
-                            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1000&q=80"
-                                alt="City Illustration" class="img-large">
-                            <h3 class="article-title">Lorem ipsum dolor sit amet consectetur. Eget faucibus habitasse
-                                faucibus a
-                                cursus congue amet in arcu.</h3>
-                            <p class="article-excerpt">Lorem ipsum dolor sit amet consectetur. Eget faucibus habitasse
-                                faucibus
-                                a cursus congue amet in arcu.</p>
-                            <div class="meta-info">December 27, 2024 <span>|</span> In 10 media</div>
-                        </div>
-
-                        <div class="sub-grid">
-                            <div class="news-item">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
-                                    alt="Portrait" class="img-portrait">
-                                <h3 class="article-title">Lorem ipsum dolor</h3>
-                                <p class="article-excerpt">Lorem ipsum dolor sit amet consectetur. Eget faucibus
-                                    habitasse...
-                                </p>
-                                <div class="meta-info">Dec 27, 2024 <span>|</span> In 10 media</div>
-                            </div>
-                            <div class="news-item">
-                                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80"
-                                    alt="Workspace" class="img-portrait">
-                                <h3 class="article-title">Lorem ipsum dolor</h3>
-                                <p class="article-excerpt">Lorem ipsum dolor sit amet consectetur. Eget faucibus
-                                    habitasse...
-                                </p>
-                                <div class="meta-info">Dec 27, 2024 <span>|</span> In 10 media</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-right">
-
-                        <div class="text-list-item">
-                            <h3 class="article-title">Lorem ipsum dolor sit amet consectetur.</h3>
-                            <p class="article-excerpt">Lorem ipsum dolor sit amet consectetur. Eget faucibus habitasse
-                                faucibus
-                                a cursus congue amet in arcu.</p>
-                            <div class="meta-info">December 27, 2024 <span>|</span> In 10 media</div>
-                        </div>
-
-                        <div class="text-list-item">
-                            <h3 class="article-title">Lorem ipsum dolor sit amet consectetur.</h3>
-                            <p class="article-excerpt">Lorem ipsum dolor sit amet consectetur. Eget faucibus habitasse
-                                faucibus
-                                a cursus congue amet in arcu.</p>
-                            <div class="meta-info">December 27, 2024 <span>|</span> In 10 media</div>
-                        </div>
-
-                        <div class="text-list-item">
-                            <h3 class="article-title">Lorem ipsum dolor sit amet consectetur.</h3>
-                            <p class="article-excerpt">Lorem ipsum dolor sit amet consectetur. Eget faucibus habitasse
-                                faucibus
-                                a cursus congue amet in arcu.</p>
-                            <div class="meta-info">December 27, 2024 <span>|</span> In 10 media</div>
-                        </div>
-
-                        <div class="text-list-item">
-                            <h3 class="article-title">Lorem ipsum dolor sit amet consectetur.</h3>
-                            <p class="article-excerpt">Lorem ipsum dolor sit amet consectetur. Eget faucibus habitasse
-                                faucibus
-                                a cursus congue amet in arcu.</p>
-                            <div class="meta-info">December 27, 2024 <span>|</span> In 10 media</div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
-
-    <section class="careers-section">
-        <div class="container">
-
-            <div class="left-column">
-                <div class="section-label">Careers</div>
-                <h2 class="main-heading">Lorem Ipsum Dolor Sit.</h2>
-                <p class="sub-desc">
-                    Lorem ipsum dolor sit amet consectetur. Dictum ornare fermentum in tincidunt ut condimentum
-                    imperdiet lectus enim.
-                </p>
-
-                <div class="accordion-box">
-
-                    <div class="accordion-item active">
-                        <div class="accordion-header">
-                            Work Culture at pittie group
-                            <div class="icon-circle minus">
-                                <i class="fas fa-minus"></i>
-                            </div>
-                        </div>
-                        <div class="accordion-content">
-                            Booking a tour with TripNavigator is simple. Visit our website and browse through our
-                            selection of tours. Once you find a tour that interests you, click on it to view details and
-                            availability. From there, you can follow the prompts.
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            Benefits Of Work
-                            <div class="icon-circle plus">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            Our Core Values
-                            <div class="icon-circle plus">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="accordion-header">
-                            Work Culture At Pittie Group
-                            <div class="icon-circle plus">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="right-column">
-                <div class="job-card">
-                    <h3 class="job-title">Area Sales Manager/Officer</h3>
-
-                    <div class="meta-row">
-                        <div class="meta-item">
-                            <i class="fas fa-briefcase"></i> General Trade
-                        </div>
-                        <div class="meta-item">
-                            <i class="fas fa-map-marker-alt"></i> Chennai & Bangalore
-                        </div>
-                        <div class="meta-item">
-                            <i class="far fa-clock"></i> Posted 3 weeks ago
-                        </div>
-                    </div>
-
-                    <p class="job-desc">
-                        Lorem ipsum dolor sit amet consectetur. Turpis vitae urna mattis molestie turpis. Luctus elit
-                        ante cursus nisl felis. Lorem ipsum dolor sit amet consectetur. Turpis vitae urna mattis
-                        molestie turpis. Luctus elit ante cursus nisl felis.
-                    </p>
-
-                    <div class="card-footer">
-                        <a href="#" class="apply-btn">
-                            Apply Now <i class="fas fa-arrow-right" style="transform: rotate(-45deg);"></i>
-                        </a>
-
-                        <div class="nav-controls">
-                            <div class="dots">
-                                <span class="dot active"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                            </div>
-                            <div class="arrows">
-                                <div class="arrow-circle"><i class="fas fa-chevron-left"></i></div>
-                                <div class="arrow-circle"><i class="fas fa-chevron-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-
-
-    <footer class="footer-section">
-        <div class="footer-container">
-
-            <div class="brand-col">
-                <div class="logo-box">
-                    <div class="logo-text-fallback">
-                        <img src="pittie-home-assests/cropped-Group-1.png" alt="">
-                    </div>
-                </div>
-                <p class="brand-desc">
-                    We aim to enrich lives, transform industries through our diverse verticals : Realty, Logistics,
-                    Consumer & Media.
-                </p>
-            </div>
-
-            <div class="link-col">
-                <h4 class="footer-heading">Quick Links</h4>
-                <ul class="footer-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">News</a></li>
-                </ul>
-            </div>
-
-            <div class="link-col">
-                <h4 class="footer-heading">Our Businesses</h4>
-                <ul class="footer-links">
-                    <li><a href="#">Pittie Realty</a></li>
-                    <li><a href="#">Pittie Consumer</a></li>
-                    <li><a href="#">IN10 Media</a></li>
-                    <li><a href="#">Pittie Logistics</a></li>
-                </ul>
-            </div>
-
-            <div class="contact-col">
-                <h4 class="footer-heading">Contact Us</h4>
-                <ul class="contact-list">
-                    <li>
-                        <i class="far fa-envelope"></i>
-                        contact@pittiegroup.com
-                    </li>
-                    <li>
-                        <i class="fas fa-phone-alt"></i>
-                        +91 22 4260 4260
-                    </li>
-                </ul>
-            </div>
-
+            <img src="Gucci-clone/Sokka-Logo.webp" alt="">
         </div>
     </footer>
 
 
-
-
-    <!-- Lenis FIRST -->
-    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.umd.min.js"></script>
-
-    <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-
-    <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
 
-    <!-- Your main JS -->
-    <!-- <script src="script.js"></script> -->
+        const header = document.getElementById("main-header");
+
+        window.addEventListener("scroll", () => {
+            const triggerPoint = window.innerHeight * 0.2; // 20% of viewport height
+
+            if (window.scrollY > triggerPoint) {
+                header.classList.add("active");
+            } else {
+                header.classList.remove("active");
+            }
+        });
+    </script>
+    <script>
+        const menuBar = document.querySelector(".manu-bar");
+        const mainNav = document.querySelector(".main-nav");
+
+        menuBar.addEventListener("click", () => {
+            mainNav.classList.toggle("active");
+            menuBar.classList.toggle("active");
+        });
+    </script>
+
+
+    <!-- sider -->
+    <script>
+        const discoverySwiper = new Swiper(".discovery-section-slider", {
+            loop: true,
+            speed: 800,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".slider-dots",
+                clickable: true,
+            },
+            touchEventsTarget: "container",
+        });
+    </script>
+
 </body>
 
 </html>
